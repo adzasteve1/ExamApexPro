@@ -50,38 +50,22 @@ all_scores = read_json(SCORES_FILE)        # list of dicts
 if "page" not in st.session_state:
     st.session_state.page = "home"
 
-if "questions" not in st.session_state:
-    st.session_state.questions = []
-
-if "index" not in st.session_state:
-    st.session_state.index = 0
-
-if "score" not in st.session_state:
-    st.session_state.score = 0
-
-if "username" not in st.session_state:
-    st.session_state.username = ""
-
-if "subject" not in st.session_state:
-    st.session_state.subject = "All"
-
-if "level" not in st.session_state:
-    st.session_state.level = "All"
-
-if "time_limit" not in st.session_state:
-    st.session_state.time_limit = 30  # default seconds per question
-
-if "start_time" not in st.session_state:
-    st.session_state.start_time = None
-
-if "timed_out" not in st.session_state:
-    st.session_state.timed_out = False
-
-if "admin" not in st.session_state:
-    st.session_state.admin = False
-
-if "editing" not in st.session_state:
-    st.session_state.editing = None  # index of question in questions.json being edited
+# Quiz session state
+for key, default in {
+    "questions": [],
+    "index": 0,
+    "score": 0,
+    "username": "",
+    "subject": "All",
+    "level": "All",
+    "time_limit": 30,
+    "start_time": None,
+    "timed_out": False,
+    "admin": False,
+    "editing": None
+}.items():
+    if key not in st.session_state:
+        st.session_state[key] = default
 
 # -------------------------
 # UI: Sidebar - global controls
@@ -99,11 +83,25 @@ available_levels = sorted({q.get("level","General") for q in all_questions})
 subject_options = ["All"] + available_subjects
 level_options = ["All"] + available_levels
 
-st.session_state.subject = st.sidebar.selectbox("Subject", subject_options, index=subject_options.index(st.session_state.subject) if st.session_state.subject in subject_options else 0)
-st.session_state.level = st.sidebar.selectbox("Level", level_options, index=level_options.index(st.session_state.level) if st.session_state.level in level_options else 0)
+st.session_state.subject = st.sidebar.selectbox(
+    "Subject", 
+    subject_options, 
+    index=subject_options.index(st.session_state.subject) if st.session_state.subject in subject_options else 0
+)
+st.session_state.level = st.sidebar.selectbox(
+    "Level", 
+    level_options, 
+    index=level_options.index(st.session_state.level) if st.session_state.level in level_options else 0
+)
 
 # Time limit per question
-st.session_state.time_limit = st.sidebar.number_input("Time limit (seconds) per question", min_value=5, max_value=600, value=st.session_state.time_limit, step=5)
+st.session_state.time_limit = st.sidebar.number_input(
+    "Time limit (seconds) per question", 
+    min_value=5, 
+    max_value=600, 
+    value=st.session_state.time_limit, 
+    step=5
+)
 
 # Buttons
 if st.sidebar.button("Start Quiz"):
@@ -240,9 +238,6 @@ def page_quiz():
     if st.button("Submit"):
         if st.session_state.timed_out:
             st.warning("Time is up for this question! Answer not accepted.")
-            # mark as incorrect and move on
-            st.session_state.index += 1
-            st.experimental_rerun()
         else:
             correct = q.get("answer")
             explanation = q.get("explanation", "")
@@ -253,11 +248,9 @@ def page_quiz():
                 st.error(f"Wrong ✖. Correct answer is: **{correct}**")
             if explanation:
                 st.info(f"Explanation: {explanation}")
-            # move to next question
-            st.session_state.index += 1
-            # reset timer for next question
-            st.session_state.start_time = time.time()
-            st.experimental_rerun()
+        st.session_state.index += 1
+        st.session_state.start_time = time.time()
+        st.experimental_rerun()
 
     # allow skip (counts as wrong)
     if st.button("Skip"):
@@ -268,6 +261,12 @@ def page_quiz():
     st.write("---")
     st.write(f"Subject: **{q.get('subject','General')}**  •  Level: **{q.get('level','General')}**")
 
+# --- The Admin page and router remain unchanged ---
+# (You can keep your page_admin() and the final router code as is)
+
+# -------------------------
+# Router
+# -------------------------
 def page_admin():
     st.title("🔧 Admin Panel")
     # login
@@ -402,9 +401,7 @@ def page_admin():
         st.session_state.admin = False
         st.experimental_rerun()
 
-# -------------------------
-# Router
-# -------------------------
+
 if st.session_state.page == "home":
     page_home()
 elif st.session_state.page == "quiz":
@@ -413,3 +410,4 @@ elif st.session_state.page == "admin":
     page_admin()
 else:
     page_home()
+
