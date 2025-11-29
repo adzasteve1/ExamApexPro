@@ -1,0 +1,334 @@
+[
+    {
+      "question": "What is 12 × 8?",
+      "options": ["96", "108", "92", "88"],
+      "answer": "96",
+      "explanation": "12 times 8 equals 96",
+      "subject": "Math",
+      "level": "JHS1"
+    },
+    {
+      "question": "The capital of Ghana is:",
+      "options": ["Accra", "Kumasi", "Tamale", "Ho"],
+      "answer": "Accra",
+      "explanation": "Accra is the capital city of Ghana",
+      "subject": "Social Studies",
+      "level": "JHS1"
+    },
+    {
+      "question": "Solve: 15 + 27",
+      "options": ["32", "42", "40", "50"],
+      "answer": "42",
+      "explanation": "15 + 27 = 42",
+      "subject": "Math",
+      "level": "JHS2"
+    },
+    {
+      "question": "Which gas do humans breathe in to survive?",
+      "options": ["Nitrogen", "Oxygen", "Carbon Dioxide", "Hydrogen"],
+      "answer": "Oxygen",
+      "explanation": "Humans inhale oxygen which is used in cellular respiration",
+      "subject": "Science",
+      "level": "JHS1"
+    },
+    {
+      "question": "What is the past tense of 'go'?",
+      "options": ["Goed", "Went", "Goes", "Gone"],
+      "answer": "Went",
+      "explanation": "'Went' is the correct past tense of 'go'.",
+      "subject": "English",
+      "level": "JHS1"
+    },
+
+
+{
+    "questions": [
+      {
+        "question": "Which of the following substances can exist in all three states of matter at 0°C?",
+        "options": ["Milk", "Petrol", "Palm oil", "Water"],
+        "answer": "Water"
+      },
+      {
+        "question": "Which of these substances sublimes when heated?",
+        "options": ["Common salt", "Baking powder", "Sulphur", "Camphor"],
+        "answer": "Camphor"
+      },
+      {
+        "question": "Which one of these takes the shape of its container?",
+        "options": ["Chalk", "Charcoal", "Petrol", "Stone"],
+        "answer": "Petrol"
+      },
+      {
+        "question": "Through which process does a naphthalene ball or camphor become smaller in size when placed in a box?",
+        "options": ["Sublimation", "Diffusion", "Condensation", "Melting"],
+        "answer": "Sublimation"
+      },
+      {
+        "question": "What is the basic unit of matter?",
+        "options": ["Atom", "Electron", "Element", "Ion"],
+        "answer": "Atom"
+      },
+      {
+        "question": "Chlorine gas is an example of?",
+        "options": ["A molecule", "An element", "A compound", "An atom"],
+        "answer": "A molecule"
+      },
+      {
+        "question": "All living things perform the following life processes except?",
+        "options": ["Excretion", "Reproduction", "Photosynthesis", "Respiration"],
+        "answer": "Photosynthesis"
+      },
+      {
+        "question": "Which of these processes can occur at all temperatures?",
+        "options": ["Sublimation", "Melting", "Boiling", "Evaporation"],
+        "answer": "Evaporation"
+      },
+      {
+        "question": "What does the chemical formula H₂ represent?",
+        "options": ["Two neutrons of hydrogen", "Two ions of hydrogen", "Two molecules of hydrogen", "Two atoms of hydrogen"],
+        "answer": "Two atoms of hydrogen"
+      },
+      {
+        "question": "Which component of the living cell is responsible for respiration?",
+        "options": ["Nucleus", "Chloroplast", "Vacuole", "Mitochondrion"],
+        "answer": "Mitochondrion"
+      },
+      {
+        "question": "Calculate the number of atoms in CaCl₂.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3"
+      },
+      {
+        "question": "The space occupied by matter is its",
+        "options": ["Volume", "Area", "Mass", "Weight"],
+        "answer": "Volume"
+      },
+      {
+        "question": "Which of the following is the basic unit of life?",
+        "options": ["Organ", "Cell", "Tissue", "Nucleus"],
+        "answer": "Cell"
+      },
+      {
+        "question": "The process by which steam changes to liquid is called",
+        "options": ["Melting", "Boiling", "Condensation", "Evaporation"],
+        "answer": "Condensation"
+      },
+      {
+        "question": "Which part of a living cell is semi-permeable?",
+        "options": ["Nucleus", "Cytoplasm", "Protoplasm", "Cell membrane"],
+        "answer": "Cell membrane"
+      },
+      {
+        "question": "The largest portion of a plant cell is occupied by which organelle?",
+        "options": ["Mitochondrion", "Nucleus", "Vacuole", "Chloroplast"],
+        "answer": "Vacuole"
+      },
+      {
+        "question": "Which states of matter are fluid?",
+        "options": ["II and III only", "I and II only", "I and III only", "I, II and III"],
+        "answer": "II and III only"
+      },
+      {
+        "question": "Which of the following organisms is/are multicellular?",
+        "options": ["I only", "I and III only", "III only", "II and III only"],
+        "answer": "III only"
+      },
+      {
+        "question": "An atom that has lost one or more electrons is called",
+        "options": ["A molecule", "An ion", "A proton", "A negative particle"],
+        "answer": "An ion"
+      },
+      {
+        "question": "Matter consists of which of the following particles?",
+        "options": ["II and III only", "I only", "II only", "I, II and III"],
+        "answer": "I, II and III"
+      },
+      {
+        "question": "Cellulose is present in which structure?",
+        "options": ["Chloroplast", "Cell wall", "Mitochondrion", "Cell membrane"],
+        "answer": "Cell wall"
+      },
+      {
+        "question": "All the following are matter except?",
+        "options": ["Light", "Ice block", "Air", "Smoke"],
+        "answer": "Light"
+      },
+      {
+        "question": "When a candle is heated, it changes from",
+        "options": ["Solid to gas", "Solid to flame", "Solid to liquid", "Liquid to gas"],
+        "answer": "Solid to liquid"
+      },
+      {
+        "question": "How many states of matter do we have?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3"
+      },
+      {
+        "question": "The characteristic not common to all living things is the ability to",
+        "options": ["Respire", "Move about", "Grow", "Respond to stimuli"],
+        "answer": "Move about"
+      },
+      {
+        "question": "The change of state from gas to liquid results in",
+        "options": ["Increase in temperature", "Decrease in volume", "Increase in pressure", "Decrease in mass"],
+        "answer": "Decrease in volume"
+      },
+      {
+        "question": "Which process involves the change of state from liquid to solid?",
+        "options": ["Freezing", "Sublimation", "Evaporation", "Melting"],
+        "answer": "Freezing"
+      },
+      {
+        "question": "One of the characteristics of solids is that",
+        "options": ["Particles are closely packed", "It takes shape of container", "It has no fixed volume", "Particles can be easily separated"],
+        "answer": "Particles are closely packed"
+      },
+      {
+        "question": "Which statement about plant cells is correct?",
+        "options": ["It contains large vacuoles", "It does not have a nucleus", "It has no definite shape", "It is surrounded by cell membrane only"],
+        "answer": "It contains large vacuoles"
+      },
+      {
+        "question": "Which animal produces without mating?",
+        "options": ["Toad", "Lizard", "Amoeba", "Goat"],
+        "answer": "Amoeba"
+      },
+      {
+        "question": "Which property of matter is true?",
+        "options": ["Mass and indefinite volume", "Volume and mass", "Density and fixed shape", "Volume and fixed shape"],
+        "answer": "Volume and mass"
+      },
+      {
+        "question": "Which property makes rock different from water?",
+        "options": ["Fixed volume", "Density", "Fixed shape", "Mass"],
+        "answer": "Fixed shape"
+      },
+      {
+        "question": "How many atoms are present in H₂O₂?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "4"
+      },
+      {
+        "question": "Which pair of structures are present in animal cells?",
+        "options": ["Cell wall & mitochondrion", "Mitochondrion & chloroplast", "Nucleus & chloroplast", "Vacuole & nucleus"],
+        "answer": "Vacuole & nucleus"
+      },
+      {
+        "question": "Cl₂ represents",
+        "options": ["Two ions of chlorine", "Two atoms of chlorine", "Two molecules of chlorine", "Two neutrons of chlorine"],
+        "answer": "Two atoms of chlorine"
+      },
+      {
+        "question": "Which of the following processes take place in all living cells?",
+        "options": ["Photosynthesis", "Respiration", "Digestion", "Fertilization"],
+        "answer": "Respiration"
+      },
+      {
+        "question": "Non-living things differ from living things because living things",
+        "options": ["Have chlorophyll", "Do not have definite shape", "Are made of chloroplast", "Take in water"],
+        "answer": "Take in water"
+      },
+      {
+        "question": "The process by which living things increase in number is",
+        "options": ["Development", "Reproduction", "Multiplication", "Addition"],
+        "answer": "Reproduction"
+      },
+      {
+        "question": "The three states of matter are",
+        "options": ["Solid, liquid and air", "Gas, liquid and solid", "Water, liquid and gas", "Earth, liquid and gas"],
+        "answer": "Gas, liquid and solid"
+      },
+      {
+        "question": "The unit of measurement of energy is",
+        "options": ["Newton", "Watt", "Joule", "Kelvin"],
+        "answer": "Joule"
+      }
+    ],
+  
+    "theory": [
+      {
+        "question": "State one difference between plants and animals in terms of excretion, feeding, and sensitivity.",
+        "answer": {
+          "Plants": {
+            "Excretion": "Store excretory products",
+            "Feeding": "Manufacture their own food",
+            "Sensitivity": "Respond slowly to stimuli"
+          },
+          "Animals": {
+            "Excretion": "Remove excretory products through organs",
+            "Feeding": "Depend on plants/animals",
+            "Sensitivity": "Respond quickly to stimuli"
+          }
+        }
+      },
+      {
+        "question": "What is an ion? Mention four examples.",
+        "answer": {
+          "Definition": "An ion is an atom or group of atoms that has lost or gained electrons.",
+          "Examples": ["Cl⁻", "SO₄²⁻", "K⁺", "Na⁺", "OH⁻"]
+        }
+      },
+      {
+        "question": "What are the three states of matter?",
+        "answer": "Solid, Liquid, Gas"
+      },
+      {
+        "question": "Mention two methods by which one state of matter can be converted to another.",
+        "answer": ["Condensation", "Boiling", "Evaporation", "Melting", "Freezing", "Sublimation"]
+      },
+      {
+        "question": "Mention two properties common to all states of matter.",
+        "answer": ["Matter has mass", "Matter occupies space"]
+      },
+      {
+        "question": "What is a living cell? State one function each of cell membrane, nucleus and chloroplast.",
+        "answer": {
+          "Definition": "A cell is the basic unit of life.",
+          "Cell membrane": ["Protects the cell", "Controls movement of substances"],
+          "Nucleus": ["Controls life activities", "Contains genes"],
+          "Chloroplast": ["Contains chlorophyll for photosynthesis"]
+        }
+      },
+      {
+        "question": "Define multicellular and unicellular organisms. What is chloroplast?",
+        "answer": {
+          "Multicellular": "Organisms made of many cells",
+          "Unicellular": "Organisms made of one cell",
+          "Chloroplast": "Organelle in plant cells containing chlorophyll"
+        }
+      },
+      {
+        "question": "Mention five characteristics of liquids. Explain why gases are more compressible than solids.",
+        "answer": {
+          "Characteristics of liquids": [
+            "Particles move randomly",
+            "Have volume",
+            "Occupy space",
+            "No definite shape",
+            "Particles close but not fixed"
+          ],
+          "Compressibility": "Gas particles are far apart while solid particles are tightly packed."
+        }
+      },
+      {
+        "question": "State four differences between molecules in solids and liquids. List the three particles of matter.",
+        "answer": {
+          "Differences": {
+            "Solids": ["Particles tightly packed", "Strong attraction", "Fixed positions", "Low kinetic energy"],
+            "Liquids": ["Particles loosely packed", "Weaker attraction", "Random movement", "Higher kinetic energy"]
+          },
+          "Particles": ["Atoms", "Molecules", "Ions"]
+        }
+      }
+    ]
+  
+},
+{
+    "question": "What planet is known as the Red Planet?",
+    "options": ["Earth", "Mars", "Jupiter", "Venus"],
+    "answer": "Mars",
+    "explanation": "Mars is called the Red Planet because of its reddish appearance.",
+    "subject": "Science",
+    "level": "JHS3"
+  }
+]
