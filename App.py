@@ -302,7 +302,7 @@ def page_quiz():
     with timer_col2:
         st.progress(max(0, (st.session_state.time_limit - remaining) / st.session_state.time_limit))
 
- def page_quiz():
+def page_quiz():
     # Ensure there are questions
     filtered = [
         q for q in st.session_state.questions 
