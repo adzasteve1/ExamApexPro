@@ -102,21 +102,86 @@ st.session_state.time_limit = st.sidebar.number_input(
     value=st.session_state.time_limit, 
     step=5
 )
+if st.sidebar.button("Start Quiz"):
+    # filter based on subject/level
+    filtered = [
+        q for q in all_questions
+        if (st.session_state.subject == "All" or q.get("subject", "General") == st.session_state.subject)
+        and (st.session_state.level == "All" or q.get("level", "General") == st.session_state.level)
+    ]
+
+    # keep questions that have 'question' (MCQ with options or subjective without options)
+    st.session_state.questions = [
+        q for q in filtered if q.get("question")
+    ]
+
+    if not st.session_state.questions:
+        st.sidebar.error("No valid questions found for the selected subject/level.")
+    else:
+        random.shuffle(st.session_state.questions)
+        st.session_state.index = 0
+        st.session_state.score = 0
+        st.session_state.start_time = time.time()
+        st.session_state.timed_out = False
+        st.session_state.page = "quiz"
 
 # Buttons
 # -------------------------
 # Sidebar Navigation (SAFE – NO RERUN)
 # -------------------------
 
-if st.sidebar.button("Start Quiz"):
-    filtered = [
-        q for q in all_questions 
-        if (st.session_state.subject == "All" or q.get("subject", "General") == st.session_state.subject)
-        and (st.session_state.level == "All" or q.get("level", "General") == st.session_state.level)
-    ]
+# -------------------------
+# Sidebar: Navigation (NO reruns)
+# -------------------------
+st.sidebar.title("Settings & Controls")
+st.sidebar.write("Configure session")
 
+# Username
+st.session_state.username = st.sidebar.text_input(
+    "Your name (optional)", value=st.session_state.username
+)
+
+# Subject and Level selectors
+available_subjects = sorted({q.get("subject", "General") for q in all_questions})
+available_levels = sorted({q.get("level", "General") for q in all_questions})
+
+subject_options = ["All"] + available_subjects
+level_options = ["All"] + available_levels
+
+st.session_state.subject = st.sidebar.selectbox(
+    "Subject", 
+    subject_options, 
+    index=subject_options.index(st.session_state.subject) 
+          if st.session_state.subject in subject_options else 0
+)
+
+st.session_state.level = st.sidebar.selectbox(
+    "Level", 
+    level_options, 
+    index=level_options.index(st.session_state.level) 
+          if st.session_state.level in level_options else 0
+)
+
+# Time limit per question
+st.session_state.time_limit = st.sidebar.number_input(
+    "Time limit (seconds) per question", 
+    min_value=5, 
+    max_value=600, 
+    value=st.session_state.time_limit, 
+    step=5
+)
+
+# Buttons to switch pages
+if st.sidebar.button("Start Quiz"):
+    # Filter only valid questions
+    filtered = [
+        q for q in all_questions
+        if (st.session_state.subject == "All" or q.get("subject","General") == st.session_state.subject)
+        and (st.session_state.level == "All" or q.get("level","General") == st.session_state.level)
+        and q.get("question") and q.get("options")
+    ]
     if not filtered:
-        st.sidebar.error("No questions found for the selected subject/level.")
+        st.sidebar.error("No valid questions found for the selected subject/level.")
     else:
         random.shuffle(filtered)
         st.session_state.questions = filtered
@@ -124,13 +189,17 @@ if st.sidebar.button("Start Quiz"):
         st.session_state.score = 0
         st.session_state.start_time = time.time()
         st.session_state.timed_out = False
-        st.session_state.page = "quiz"  # SWITCH PAGE ONLY
+        st.session_state.page = "quiz"
+        st.stop()  # stop here and let router display quiz page
 
 if st.sidebar.button("Go to Admin"):
     st.session_state.page = "admin"
+    st.stop()
 
 if st.sidebar.button("Home"):
     st.session_state.page = "home"
+    st.stop()
+
 
 # -------------------------
 # Helper for saving score
@@ -233,9 +302,74 @@ def page_quiz():
     with timer_col2:
         st.progress(max(0, (st.session_state.time_limit - remaining) / st.session_state.time_limit))
 
-    options = q.get("options", [])
-    selected = st.radio("Choose your answer:", options, key=f"answer_{idx}")
+ def page_quiz():
+    # Ensure there are questions
+    filtered = [
+        q for q in st.session_state.questions 
+        if q.get("question") and q.get("options")  # only valid questions
+    ]
+    
+    if not filtered:
+        st.error("No valid questions found. Check Admin for questions.")
+        return
 
+    total = len(filtered)
+    idx = st.session_state.index
+
+    # quiz finished
+    if idx >= total:
+        st.success("🎉 Quiz complete!")
+        st.write(f"Name: **{st.session_state.username or 'Anonymous'}**")
+        st.write(f"Score: **{st.session_state.score} / {total}**")
+        save_score(st.session_state.username, st.session_state.score, total, st.session_state.subject, st.session_state.level)
+        st.download_button("Download your score (JSON)", json.dumps(read_json(SCORES_FILE), indent=2), file_name="scores.json")
+        if st.button("Restart quiz"):
+            st.session_state.index = 0
+            st.session_state.score = 0
+            st.session_state.start_time = time.time()
+            st.session_state.questions = random.sample(st.session_state.questions, k=len(st.session_state.questions))
+            st.session_state.page = "quiz"
+            st.stop()
+        if st.button("Back to Home"):
+            st.session_state.page = "home"
+            st.stop()
+        return
+
+    # current question
+    q = filtered[idx]
+
+    st.header(f"Question {idx+1} / {total}")
+    st.subheader(q.get("question", "No question text"))
+    if q.get("image"):
+        st.image(q.get("image"))
+
+    # Timer
+    if st.session_state.start_time is None or st.session_state.get("q_index") != idx:
+        st.session_state.start_time = time.time()
+        st.session_state.q_index = idx
+        st.session_state.timed_out = False
+
+    elapsed = time.time() - st.session_state.start_time
+    remaining = int(st.session_state.time_limit - elapsed)
+    if remaining <= 0:
+        st.session_state.timed_out = True
+        remaining = 0
+
+    timer_col1, timer_col2 = st.columns([2,6])
+    with timer_col1:
+        st.write("⏱ Time left:")
+        st.metric("", f"{remaining} s")
+    with timer_col2:
+        st.progress(max(0, (st.session_state.time_limit - remaining) / st.session_state.time_limit))
+
+    # Check if options exist
+    options = q.get("options", [])
+    if options:
+        selected = st.radio("Choose your answer:", options, key=f"answer_{idx}")
+    else:
+        selected = st.text_input("Type your answer:", key=f"answer_{idx}")
+
+    # Submit
     if st.button("Submit"):
         if st.session_state.timed_out:
             st.warning("Time is up! Answer not accepted.")
@@ -249,9 +383,20 @@ def page_quiz():
                 st.error(f"Wrong ✖. Correct answer: **{correct}**")
             if explanation:
                 st.info(f"Explanation: {explanation}")
+
+        st.session_state.index += 1
+        st.session_state.start_time = time.time()
+        st.stop()  # stop to allow router to reload page
+
+    # Skip
+    if st.button("Skip"):
         st.session_state.index += 1
         st.session_state.start_time = time.time()
         st.stop()
+
+    st.write("---")
+    st.write(f"Subject: **{q.get('subject','General')}**  •  Level: **{q.get('level','General')}**")
+
 
 
     if st.button("Skip"):
@@ -398,14 +543,20 @@ def page_admin():
         st.stop()
 
 
+# ROUTER (NO RERUNS)
 # -------------------------
-# ROUTER
-# -------------------------
-if st.session_state.page == "home":
+
+page = st.session_state.get("page", "home")
+
+if page == "home":
     page_home()
-elif st.session_state.page == "quiz":
+
+elif page == "quiz":
     page_quiz()
-elif st.session_state.page == "admin":
+
+elif page == "admin":
     page_admin()
+
 else:
     page_home()
+
