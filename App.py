@@ -168,11 +168,11 @@ st.session_state.level = st.sidebar.selectbox(
 
 # Time limit per question
 st.session_state.time_limit = st.sidebar.number_input(
-    "Time limit (seconds) per question", 
-    min_value=5, 
-    max_value=600, 
-    value=st.session_state.time_limit, 
-    step=5
+    "Time limit (seconds) per question",
+    min_value=5,
+    max_value=300,
+    step=5,
+    key="time_limit_input"
 )
 
 # Buttons to switch pages
