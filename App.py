@@ -138,7 +138,9 @@ st.sidebar.write("Configure session")
 
 # Username
 st.session_state.username = st.sidebar.text_input(
-    "Your name (optional)", value=st.session_state.username
+    "Your name (optional)",
+    value=st.session_state.username,
+    key="username_input"
 )
 
 # Subject and Level selectors
