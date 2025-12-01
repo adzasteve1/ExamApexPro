@@ -176,7 +176,8 @@ st.session_state.time_limit = st.sidebar.number_input(
 )
 
 # Buttons to switch pages
-if st.sidebar.button("Start Quiz"):
+if st.sidebar.button("Start Quiz", key="start_quiz_button"):
+
     # Filter only valid questions
     filtered = [
         q for q in all_questions
