@@ -151,17 +151,19 @@ subject_options = ["All"] + available_subjects
 level_options = ["All"] + available_levels
 
 st.session_state.subject = st.sidebar.selectbox(
-    "Subject", 
-    subject_options, 
-    index=subject_options.index(st.session_state.subject) 
-          if st.session_state.subject in subject_options else 0
+    "Subject",
+    subject_options,
+    index=subject_options.index(st.session_state.subject)
+    if st.session_state.subject in subject_options else 0,
+    key="subject_select"
 )
 
 st.session_state.level = st.sidebar.selectbox(
-    "Level", 
-    level_options, 
-    index=level_options.index(st.session_state.level) 
-          if st.session_state.level in level_options else 0
+    "Level",
+    level_options,
+    index=level_options.index(st.session_state.level)
+    if st.session_state.level in level_options else 0,
+    key="level_select"
 )
 
 # Time limit per question
