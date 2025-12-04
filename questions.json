@@ -39,6 +39,7 @@
     "subject": "English",
     "level": "JHS1"
   },
+
   {
     "question": "Which of the following substances can exist in all three states of matter at 0°C?",
     "options": ["Milk", "Petrol", "Palm oil", "Water"],
@@ -46,6 +47,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Which of these substances sublimes when heated?",
     "options": ["Common salt", "Baking powder", "Sulphur", "Camphor"],
@@ -53,6 +55,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Which one of these takes the shape of its container?",
     "options": ["Chalk", "Charcoal", "Petrol", "Stone"],
@@ -60,6 +63,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Through which process does a naphthalene ball or camphor become smaller in size when placed in a box?",
     "options": ["Sublimation", "Diffusion", "Condensation", "Melting"],
@@ -67,6 +71,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "What is the basic unit of matter?",
     "options": ["Atom", "Electron", "Element", "Ion"],
@@ -74,6 +79,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Chlorine gas is an example of?",
     "options": ["A molecule", "An element", "A compound", "An atom"],
@@ -81,6 +87,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "All living things perform the following life processes except?",
     "options": ["Excretion", "Reproduction", "Photosynthesis", "Respiration"],
@@ -88,6 +95,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Which of these processes can occur at all temperatures?",
     "options": ["Sublimation", "Melting", "Boiling", "Evaporation"],
@@ -95,6 +103,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "What does the chemical formula H₂ represent?",
     "options": ["Two neutrons of hydrogen", "Two ions of hydrogen", "Two molecules of hydrogen", "Two atoms of hydrogen"],
@@ -102,6 +111,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Which component of the living cell is responsible for respiration?",
     "options": ["Nucleus", "Chloroplast", "Vacuole", "Mitochondrion"],
@@ -109,6 +119,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Calculate the number of atoms in CaCl₂.",
     "options": ["2", "3", "4", "5"],
@@ -116,6 +127,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "The space occupied by matter is its",
     "options": ["Volume", "Area", "Mass", "Weight"],
@@ -123,6 +135,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Which of the following is the basic unit of life?",
     "options": ["Organ", "Cell", "Tissue", "Nucleus"],
@@ -130,6 +143,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "The process by which steam changes to liquid is called",
     "options": ["Melting", "Boiling", "Condensation", "Evaporation"],
@@ -137,6 +151,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Which part of a living cell is semi-permeable?",
     "options": ["Nucleus", "Cytoplasm", "Protoplasm", "Cell membrane"],
@@ -144,6 +159,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "The largest portion of a plant cell is occupied by which organelle?",
     "options": ["Mitochondrion", "Nucleus", "Vacuole", "Chloroplast"],
@@ -151,6 +167,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Which states of matter are fluid?",
     "options": ["II and III only", "I and II only", "I and III only", "I, II and III"],
@@ -158,6 +175,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Which of the following organisms is/are multicellular?",
     "options": ["I only", "I and III only", "III only", "II and III only"],
@@ -165,6 +183,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "An atom that has lost one or more electrons is called",
     "options": ["A molecule", "An ion", "A proton", "A negative particle"],
@@ -172,6 +191,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Matter consists of which of the following particles?",
     "options": ["II and III only", "I only", "II only", "I, II and III"],
@@ -179,6 +199,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Cellulose is present in which structure?",
     "options": ["Chloroplast", "Cell wall", "Mitochondrion", "Cell membrane"],
@@ -186,6 +207,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "All the following are matter except?",
     "options": ["Light", "Ice block", "Air", "Smoke"],
@@ -193,6 +215,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "When a candle is heated, it changes from",
     "options": ["Solid to gas", "Solid to flame", "Solid to liquid", "Liquid to gas"],
@@ -200,6 +223,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "How many states of matter do we have?",
     "options": ["2", "3", "4", "5"],
@@ -207,6 +231,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "The characteristic not common to all living things is the ability to",
     "options": ["Respire", "Move about", "Grow", "Respond to stimuli"],
@@ -214,6 +239,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "The change of state from gas to liquid results in",
     "options": ["Increase in temperature", "Decrease in volume", "Increase in pressure", "Decrease in mass"],
@@ -221,6 +247,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Which process involves the change of state from liquid to solid?",
     "options": ["Freezing", "Sublimation", "Evaporation", "Melting"],
@@ -228,6 +255,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "One of the characteristics of solids is that",
     "options": ["Particles are closely packed", "It takes shape of container", "It has no fixed volume", "Particles can be easily separated"],
@@ -235,6 +263,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Which statement about plant cells is correct?",
     "options": ["It contains large vacuoles", "It does not have a nucleus", "It has no definite shape", "It is surrounded by cell membrane only"],
@@ -242,6 +271,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Which animal produces without mating?",
     "options": ["Toad", "Lizard", "Amoeba", "Goat"],
@@ -249,6 +279,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Which property of matter is true?",
     "options": ["Mass and indefinite volume", "Volume and mass", "Density and fixed shape", "Volume and fixed shape"],
@@ -256,6 +287,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Which property makes rock different from water?",
     "options": ["Fixed volume", "Density", "Fixed shape", "Mass"],
@@ -263,6 +295,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "How many atoms are present in H₂O₂?",
     "options": ["2", "3", "4", "5"],
@@ -270,6 +303,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Which pair of structures are present in animal cells?",
     "options": ["Cell wall & mitochondrion", "Mitochondrion & chloroplast", "Nucleus & chloroplast", "Vacuole & nucleus"],
@@ -277,6 +311,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Cl₂ represents",
     "options": ["Two ions of chlorine", "Two atoms of chlorine", "Two molecules of chlorine", "Two neutrons of chlorine"],
@@ -284,6 +319,7 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Which of the following processes take place in all living cells?",
     "options": ["Photosynthesis", "Respiration", "Digestion", "Fertilization"],
@@ -291,111 +327,780 @@
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Non-living things differ from living things because living things",
     "options": ["Have chlorophyll", "Do not have definite shape", "Are made of chloroplast", "Take in water"],
     "answer": "Take in water",
     "subject": "Science",
-    "level": "Science"
+    "level": "JHS1"
   },
+
   {
     "question": "State one difference between plants and animals in terms of excretion, feeding, and sensitivity.",
-    "answer": {
-      "Plants": {
-        "Excretion": "Store excretory products",
-        "Feeding": "Manufacture their own food",
-        "Sensitivity": "Respond slowly to stimuli"
-      },
-      "Animals": {
-        "Excretion": "Remove excretory products through organs",
-        "Feeding": "Depend on plants/animals",
-        "Sensitivity": "Respond quickly to stimuli"
-      }
-    },
+    "answer": "Plants:\n- Excretion: Store excretory products\n- Feeding: Manufacture food\n- Sensitivity: Respond slowly\n\nAnimals:\n- Excretion: Remove wastes\n- Feeding: Depend on others\n- Sensitivity: Respond quickly",
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "What is an ion? Mention four examples.",
-    "answer": {
-      "Definition": "An ion is an atom or group of atoms that has lost or gained electrons.",
-      "Examples": ["Cl⁻", "SO₄²⁻", "K⁺", "Na⁺", "OH⁻"]
-    },
+    "answer": "An ion is an atom that has lost or gained electrons. Examples: Cl⁻, SO₄²⁻, K⁺, Na⁺, OH⁻",
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "What are the three states of matter?",
     "answer": "Solid, Liquid, Gas",
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Mention two methods by which one state of matter can be converted to another.",
-    "answer": ["Condensation", "Boiling", "Evaporation", "Melting", "Freezing", "Sublimation"],
+    "answer": "Condensation, Boiling, Evaporation, Melting, Freezing, Sublimation",
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Mention two properties common to all states of matter.",
-    "answer": ["Matter has mass", "Matter occupies space"],
+    "answer": "Matter has mass; Matter occupies space",
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "What is a living cell? State one function each of cell membrane, nucleus and chloroplast.",
-    "answer": {
-      "Definition": "A cell is the basic unit of life.",
-      "Cell membrane": ["Protects the cell", "Controls movement of substances"],
-      "Nucleus": ["Controls life activities", "Contains genes"],
-      "Chloroplast": ["Contains chlorophyll for photosynthesis"]
-    },
+    "answer": "Cell: basic unit of life.\nCell membrane: protects, controls movement.\nNucleus: controls activities.\nChloroplast: photosynthesis.",
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Define multicellular and unicellular organisms. What is chloroplast?",
-    "answer": {
-      "Multicellular": "Organisms made of many cells",
-      "Unicellular": "Organisms made of one cell",
-      "Chloroplast": "Organelle in plant cells containing chlorophyll"
-    },
+    "answer": "Multicellular: many cells. Unicellular: one cell. Chloroplast: organelle with chlorophyll.",
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "Mention five characteristics of liquids. Explain why gases are more compressible than solids.",
-    "answer": {
-      "Characteristics of liquids": [
-        "Particles move randomly",
-        "Have volume",
-        "Occupy space",
-        "No definite shape",
-        "Particles close but not fixed"
-      ],
-      "Compressibility": "Gas particles are far apart while solid particles are tightly packed."
-    },
+    "answer": "Liquids: random movement, volume, space, no shape, close particles. Gases compressible because particles far apart.",
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "State four differences between molecules in solids and liquids. List the three particles of matter.",
-    "answer": {
-      "Differences": {
-        "Solids": ["Particles tightly packed", "Strong attraction", "Fixed positions", "Low kinetic energy"],
-        "Liquids": ["Particles loosely packed", "Weaker attraction", "Random movement", "Higher kinetic energy"]
-      },
-      "Particles": ["Atoms", "Molecules", "Ions"]
-    },
+    "answer": "Solids: packed, strong force, fixed positions, low energy. Liquids: loose, weak force, movement, higher energy. Particles: atoms, molecules, ions.",
     "subject": "Science",
     "level": "JHS1"
   },
+
   {
     "question": "What planet is known as the Red Planet?",
     "options": ["Earth", "Mars", "Jupiter", "Venus"],
     "answer": "Mars",
-    "explanation": "Mars is called the Red Planet because of its reddish appearance.",
+    "explanation": "Mars is the Red Planet due to iron oxide dust.",
     "subject": "Science",
     "level": "JHS3"
-  }
-]
+  },
+  
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "Which of the following substances is a compound?",
+      "options": ["sulphur", "copper", "sucrose", "diamond"],
+      "answer": "sucrose"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "The number required to make the following chemical equation balanced is H2 + O2 → H2O",
+      "options": ["3", "1/2", "1", "1/3"],
+      "answer": "2"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "The number of elements in the compound Ca(OH)2 is",
+      "options": ["5", "2", "4", "3"],
+      "answer": "3"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "Which of the following substances is a compound?",
+      "options": ["sodium", "oxygen", "Magnesium", "Water"],
+      "answer": "Water"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "The systematic name of NO2 is",
+      "options": ["nitrogen (II) oxide", "nitrogen oxide", "nitrogen (IV) oxide", "nitrogen (I) oxide"],
+      "answer": "nitrogen (IV) oxide"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "What is the systematic name of the compound CO?",
+      "options": ["carbon dioxide", "carbon (IV) oxide", "carbon (I) oxide", "carbon (II) oxide"],
+      "answer": "carbon (II) oxide"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "Which of the following chemical equations is balanced?",
+      "options": ["H2 + Cl2 → 2HCl", "Na + Cl2 → NaCl", "K + O2 → K2O", "Mg + O2 → MgO"],
+      "answer": "H2 + Cl2 → 2HCl"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "Calcium oxide and water reacts to form calcium hydroxide. The formula for the product is",
+      "options": ["CaH2O", "Ca(OH)2", "Ca2OH", "Ca(H2O)2"],
+      "answer": "Ca(OH)2"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "The chemical formula of aluminium sulphide is Al_y S_3. Determine the value of y.",
+      "options": ["4", "2", "1", "3"],
+      "answer": "2"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "An example of chemical compound is",
+      "options": ["oxygen", "phosphorus", "ammonia", "aluminium"],
+      "answer": "ammonia"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "How many different elements are present in the compound CuCl2?",
+      "options": ["three", "two", "four", "one"],
+      "answer": "two"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "The systematic name of the compound FeS is",
+      "options": ["iron (III) sulphide", "iron (II) sulphide", "iron (IV) sulphide", "iron (I) sulphide"],
+      "answer": "iron (II) sulphide"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "How many different elements are present in compound H2SO4",
+      "options": ["3", "7", "6", "2"],
+      "answer": "3"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "A charge of sulphur in the compound SO2 is",
+      "options": ["+4", "2", "4", "+2"],
+      "answer": "+4"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "Which of the following iron is formed by the loss of 2 electrons?",
+      "options": ["S2-", "Ca2+", "K+", "F-"],
+      "answer": "Ca2+"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "Which of the following pairs of elements is in the same period in the periodic table?",
+      "options": ["B and Al", "H and Li", "Be and B", "Na and K"],
+      "answer": "B and Al"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "The two main particles in the nucleus of an atom are",
+      "options": ["electrons and protons", "neutrons and protons", "shells and neutrons", "neutrons and electrons"],
+      "answer": "neutrons and protons"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS 3",
+      "question": "The periodic table is an arrangement of elements according to increasing",
+      "options": ["neutron number", "nucleon number", "mass number", "atomic number"],
+      "answer": "atomic number"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "Define neutralization reaction",
+      "answer": "Neutralization reaction is a chemical reaction between an acid and a base to form salt and water only."
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "Give observations when a piece of blue litmus paper is dropped in Sodium hydroxide solution, Dilute hydrochloric acid, Lime juice, Distilled water, and Rain water",
+      "answer": "Sodium hydroxide solution: No colour change; Rain water: Blue litmus changes to purple; Dilute hydrochloric acid: Blue litmus changes to red; Lime juice: Blue litmus changes to red; Distilled water: No colour change"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "Write a balanced equation for the reaction between NaOH and HCl",
+      "answer": "NaOH + HCl → NaCl + H2O"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "Name of the reaction between NaOH and HCl",
+      "answer": "Neutralization"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "What is acid?",
+      "answer": "An acid is a proton donor or a substance that produces excess hydrogen ion (H+) in water."
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "Give two differences between acid and base in terms of taste and feel",
+      "answer": "Acid: taste - sour, feel - non-slippery; Base: taste - bitter, feel - slippery/soapy"
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "An atom is the smallest part of an element that can take part in a chemical reaction. Why are atoms electrically neutral?",
+      "answer": "The total number of positive charges is equal to the total number of negative charges, canceling each other to make net charge zero."
+    },
+    {
+      "subject": "Science",
+      "level": "JHS3",
+      "question": "Define valency and give valencies of Iron, Zinc, Hydroxyl, and Carbonate",
+      "answer": "Valency is the combining power of an element. Iron: 2 or 3, Zinc: 2, Hydroxyl: 1, Carbonate: 2"
+    },
+    
+      {
+        "level": "JHS3",
+        "subject": "Science",
+        "type": "objective",
+        "question": "Which of the following statements about aerobic and anaerobic respiration is not correct?",
+        "options": ["No oxygen is required in anaerobic respiration", "Water is produced as a by-product in aerobic respiration", "Very little energy is released in aerobic respiration", "Alcohol or lactic acid is produced in anaerobic respiration"],
+        "answer": "Very little energy is released in aerobic respiration"
+      },
+      {
+        "level": "JHS3",
+        "subject": "Science",
+        "type": "objective",
+        "question": "The gas produced when glucose is oxidized during internal respiration is",
+        "options": ["Nitrogen", "Carbon (II) oxide", "Hydrogen", "Carbon (IV) oxide"],
+        "answer": "Carbon (IV) oxide"
+      },
+      {
+        "level": "JHS3",
+        "subject": "Science",
+        "type": "objective",
+        "question": "Movement of ribs is brought about by the",
+        "options": ["Trachea", "Pleural cavity", "Intercostal muscle", "Larynx"],
+        "answer": "Intercostal muscle"
+      },
+      {
+        "level": "JHS3",
+        "subject": "Science",
+        "type": "objective",
+        "question": "Which of the following life processes is represented by the equation: glucose – oxygen – carbon dioxide + water + energy?",
+        "options": ["Excretion", "Digestion", "Respiration", "Photosynthesis"],
+        "answer": "Respiration"
+      },
+      {
+        "level": "JHS3",
+        "subject": "Science",
+        "type": "objective",
+        "question": "Which of the following statements about aerobic respiration is correct?",
+        "options": ["Oxygen is not required", "The by-products are alcohol and carbon dioxide", "The by-products are carbon dioxide and water", "Little amount of energy is produced"],
+        "answer": "The by-products are carbon dioxide and water"
+      },
+      {
+        "level": "JHS3",
+        "subject": "Science",
+        "type": "objective",
+        "question": "External respiration in living organisms is also known as",
+        "options": ["Gaseous respiration", "Aerobic respiration", "Anaerobic respiration", "Tissue respiration"],
+        "answer": "Gaseous respiration"
+      },
+      {
+        "level": "JHS3",
+        "subject": "Science",
+        "type": "objective",
+        "question": "The function of the hair in the nose of humans is to",
+        "options": ["Keep nose moist", "Keep the nose warm", "Make breathing easier", "Filter dust from the air breathed in"],
+        "answer": "Filter dust from the air breathed in"
+      },
+      {
+        "level": "JHS3",
+        "subject": "Science",
+        "type": "objective",
+        "question": "The by-products of respiration are",
+        "options": ["Carbon dioxide and water", "Oxygen and air", "Carbon dioxide and heat", "Oxygen and heat"],
+        "answer": "Carbon dioxide and water"
+      },
+      {
+        "level": "JHS3",
+        "subject": "Science",
+        "type": "objective",
+        "question": "Which of the following pairs of structures are part of the respiratory system of humans?",
+        "options": ["Trachea and duodenum", "Fallopian tube and alveoli", "Pharynx and oesophagus", "Trachea and alveoli"],
+        "answer": "Trachea and alveoli"
+      },
+      {
+        "level": "JHS3",
+        "subject": "Science",
+        "type": "objective",
+        "question": "Which of the following food substances is not involved in respiration?",
+        "options": ["Fatty acid", "Vitamins", "Amino acid", "Glucose"],
+        "answer": "Vitamins"
+      },
+      {
+        "level": "JHS3",
+        "subject": "Science",
+        "type": "objective",
+        "question": "Glucose exchange between air and blood in the lungs takes place in the",
+        "options": ["Larynx", "Alveoli", "Trachea", "Bronchi"],
+        "answer": "Alveoli"
+      },
+      {
+        "level": "JHS3",
+        "subject": "Science",
+        "type": "objective",
+        "question": "Exchange of gases takes place in the respiratory system through the",
+        "options": ["Nostrils", "Lungs", "Bronchi", "Trachea"],
+        "answer": "Lungs"
+      },
+      {
+        "level": "JHS3",
+        "subject": "Science",
+        "type": "objective",
+        "question": "Which of the following gases supports combustion?",
+        "options": ["Nitrogen", "Hydrogen", "Oxygen", "Carbon dioxide"],
+        "answer": "Oxygen"
+      },
+    
+        {
+          "level": "JHS3",
+          "subject": "Science",
+          "type": "objective",
+          "question": "What do human beings obtain from food to enable them work?",
+          "options": ["Energy", "Vitamin C", "Blood", "Protein"],
+          "answer": "Energy"
+        },
+        {
+          "level": "JHS3",
+          "subject": "Science",
+          "type": "objective",
+          "question": "A patient who coughs and spits out blood may be suffering from",
+          "options": ["Measles", "Tuberculosis", "Asthma", "Influenza"],
+          "answer": "Tuberculosis"
+        },
+        {
+          "level": "JHS3",
+          "subject": "Science",
+          "type": "objective",
+          "question": "Which of the following is the percentage composition of air?",
+          "options": ["78", "0.03", "21", "98"],
+          "answer": "78"
+        },
+        {
+          "level": "JHS3",
+          "subject": "Science",
+          "type": "objective",
+          "question": "A person urinates more often in the rainy season than in the dry season because",
+          "options": ["He drinks less water", "More sweat evaporates from the skin", "His kidney works faster", "Less sweat evaporation from the skin"],
+          "answer": "More sweat evaporates from the skin"
+        },
+        {
+          "level": "JHS3",
+          "subject": "Science",
+          "type": "objective",
+          "question": "The structure of the skin that removes waste substances is the",
+          "options": ["Hairs", "Sweat duct", "Fat deposit", "Sweat gland"],
+          "answer": "Sweat gland"
+        },
+        {
+          "level": "JHS3",
+          "subject": "Science",
+          "type": "objective",
+          "question": "The process by which metabolic waste is removed from the body is called",
+          "options": ["Ingestion", "Excretion", "Respiration", "Egestion"],
+          "answer": "Excretion"
+        },
+        {
+          "level": "JHS3",
+          "subject": "Science",
+          "type": "objective",
+          "question": "Which organ moves metabolic waste from the body?",
+          "options": ["Kidney", "Anus", "Spleen", "Heart"],
+          "answer": "Kidney"
+        },
+        {
+          "level": "JHS3",
+          "subject": "Science",
+          "type": "objective",
+          "question": "Which type of energy is lost when sweat evaporates from the human body?",
+          "options": ["Heat energy", "Sound energy", "Chemical energy", "Mechanical energy"],
+          "answer": "Heat energy"
+        },
+        {
+          "level": "JHS3",
+          "subject": "Science",
+          "type": "objective",
+          "question": "Which environmental factor increases sweating in humans?",
+          "options": ["High humidity", "High pressure", "High temperature", "Low temperature"],
+          "answer": "High temperature"
+        },
+        {
+          "level": "JHS3",
+          "subject": "Science",
+          "type": "objective",
+          "question": "The removal of waste products from the cells of an organism is called",
+          "options": ["Circulation", "Assimilation", "Excretion", "Exhalation"],
+          "answer": "Excretion"
+        },
+        {
+          "level": "JHS3",
+          "subject": "Science",
+          "type": "objective",
+          "question": "Carbon dioxide in the blood is removed from the body through the",
+          "options": ["Lungs", "Skin", "Kidneys", "Mouth"],
+          "answer": "Lungs"
+        },
+        {
+          "level": "JHS3",
+          "subject": "Science",
+          "type": "objective",
+          "question": "In man, the conversion of poisonous substances into harmless forms takes place in the",
+          "options": ["Liver", "Bladder", "Duodenum", "Kidney"],
+          "answer": "Liver"
+        },
+        {
+          "level": "JHS3",
+          "subject": "Science",
+          "type": "objective",
+          "question": "The large component of sweat is",
+          "options": ["Glucose", "Water", "Salt", "Urea"],
+          "answer": "Water"
+        },
+        {
+          "level": "JHS3",
+          "subject": "Science",
+          "type": "objective",
+          "question": "Which organs are connected by the ureter?",
+          "options": ["Intestines and anus", "Bladder and heart", "Kidney and bladder", "Liver and kidney"],
+          "answer": "Kidney and bladder"
+        },
+        {
+          "level": "JHS3",
+          "subject": "Science",
+          "type": "objective",
+          "question": "In which organ is urine produced?",
+          "options": ["Penis and vagina", "Kidney", "Bladder", "Liver"],
+          "answer": "Kidney"
+        },
+        
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "The farming system that makes the most effective use of land is",
+            "options": ["Mixed farming", "Land rotation", "Mixed cropping", "Crop rotation"],
+            "answer": "Mixed farming"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "Legumes are generally included in crop rotation because they",
+            "options": ["Have short life span", "Are good cover crops", "Have high market value", "Fix atmospheric nitrogen in the soil"],
+            "answer": "Fix atmospheric nitrogen in the soil"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "The practice of growing cowpea and maize on the same land at the same time is known as",
+            "options": ["Crop rotation", "Mixed farming", "Mixed cropping", "Land rotation"],
+            "answer": "Mixed cropping"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "The farming system which involves growing one type of crop on the same land every season is known as",
+            "options": ["Mixed farming", "Monoculture", "Mixed cropping", "Mono cropping"],
+            "answer": "Monoculture"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "The farming system which involves growing rice and rearing fowls is known as",
+            "options": ["Crop rotation", "Organic farming", "Mixed cropping", "Mixed farming"],
+            "answer": "Mixed farming"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "Which crop should be planted after cassava in crop rotation?",
+            "options": ["Yam", "Cowpea", "Cocoyam", "Onion"],
+            "answer": "Cowpea"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "An advantage of practicing organic farming is that it",
+            "options": ["Increases resistance to plant disease", "Increases soil fertility", "Reduces pest infestation", "Reduces toxicity levels in plants"],
+            "answer": "Reduces toxicity levels in plants"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "A system of farming which leads to continuous destruction of virgin forest is",
+            "options": ["Shifting farming", "Mixed farming", "Pastoral farming", "Mixed cropping"],
+            "answer": "Shifting farming"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "An example of a legume is",
+            "options": ["Millet", "Groundnut", "Sorghum", "Sweet potato"],
+            "answer": "Groundnut"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "A farming system which requires at least three years programme is",
+            "options": ["Mixed cropping", "Organic farming", "Crop rotation", "Mixed farming"],
+            "answer": "Crop rotation"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "The farming system that makes effective use of available soil nutrients in a growing season is",
+            "options": ["Land rotation", "Crop rotation", "Mixed farming", "Mixed cropping"],
+            "answer": "Crop rotation"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "The cultivation of different crops on different plots of farmland in a definite cycle is called",
+            "options": ["Mixed cropping", "Crop rotation", "Shifting cultivation", "Land rotation"],
+            "answer": "Crop rotation"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "Which of the following practices is not a principle of crop rotation?",
+            "options": ["Crops that are closely related should follow each other", "Legumes should be added to the rotation program", "Fallow period should be allowed during rotation", "Deep-rooted crops should be followed by shallow-rooted crops"],
+            "answer": "Crops that are closely related should follow each other"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "When a ray of light travels from a dense medium into a denser medium, it",
+            "options": ["Is parallel to the incident ray", "Bends away from the normal", "Is perpendicular to the incident ray", "Bends towards the normal"],
+            "answer": "Bends towards the normal"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "An example of a natural source of light is",
+            "options": ["Moon", "Lantern", "Glow worm", "Torchlight"],
+            "answer": "Moon"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "The image formed by a plane mirror is always",
+            "options": ["Virtual", "Real", "Magnified", "Inverted"],
+            "answer": "Virtual"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "A linear eclipse may occur when the",
+            "options": ["Sun is between the earth and moon", "Moon is far from the earth", "Moon is between the earth and the sun", "Earth is between the sun and the moon"],
+            "answer": "Moon is between the earth and the sun"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "When light travels from glass to air, its speed is",
+            "options": ["Reduced", "Increased", "Halved", "Unchanged"],
+            "answer": "Increased"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "One characteristic of an image formed in a pin-hole camera is that the image is",
+            "options": ["Magnified", "Upright", "Diminished", "Virtual"],
+            "answer": "Diminished"
+          },
+          {
+            "level": "JHS3",
+            "subject": "Science",
+            "type": "objective",
+            "question": "Which of the following statements about shadow formation is correct?",
+            "options": ["It shows that light rays can travel in a straight line", "It can be diffused", "It can be refracted", "It can be reflected"],
+            "answer": "It shows that light rays can travel in a straight line"
+          },
+          
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "The energy transformation that takes place in a solar cell is",
+              "options": ["Light to electrical", "Light to chemical", "Electrical to light", "Electrical to heat"],
+              "answer": "Light to electrical"
+            },
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "Electricity is used by appliances to do work. This means that electricity is a form of",
+              "options": ["Force", "Energy", "Machine", "Generator"],
+              "answer": "Energy"
+            },
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "Determine the potential energy of a block of mass 2 kg placed on a building 10 m tall [g = 10 m/s²]",
+              "options": ["50 J", "200 J", "20 J", "100 J"],
+              "answer": "200 J"
+            },
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "The types of energy obtained when an electric bulb is connected to a battery is",
+              "options": ["Magnetic energy", "Chemical energy", "Electrical energy", "Light energy"],
+              "answer": "Electrical energy"
+            },
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "In which of the following devices is electrical energy transformed into light energy?",
+              "options": ["Radio", "Fluorescent tube", "Electric bell", "Lantern"],
+              "answer": "Fluorescent tube"
+            },
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "Which of the following energy change takes place in a ringing bell?",
+              "options": ["Potential to sound", "Mechanical to sound", "Potential to kinetic", "Sound to light"],
+              "answer": "Mechanical to sound"
+            },
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "Which of the following converts electrical energy into sound energy?",
+              "options": ["Washing machine", "Electric heater", "Electric fan", "Loudspeaker"],
+              "answer": "Loudspeaker"
+            },
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "A solar cell produces electrical energy from",
+              "options": ["Light", "Heat", "Sound", "Electromagnets"],
+              "answer": "Light"
+            },
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "When a mango falls from a tree, its potential energy changes to",
+              "options": ["Heat energy", "Sound energy", "Chemical energy", "Kinetic energy"],
+              "answer": "Kinetic energy"
+            },
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "The energy that causes the turbine of a hydro-electric plant to rotate is",
+              "options": ["Potential energy", "Kinetic energy", "Electric energy", "Chemical energy"],
+              "answer": "Kinetic energy"
+            },
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "The energy stored in food is",
+              "options": ["Chemical energy", "Solar energy", "Electrostatic energy", "Thermal energy"],
+              "answer": "Chemical energy"
+            },
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "The energy possessed by a compressed spring is",
+              "options": ["Potential energy", "Kinetic energy", "Chemical energy", "Magnetic energy"],
+              "answer": "Potential energy"
+            },
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "The energy for lighting a torch bulb comes from the",
+              "options": ["Cell", "Filament", "Switch", "Bulb"],
+              "answer": "Cell"
+            },
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "An object at rest may have",
+              "options": ["Momentum", "Velocity", "Kinetic energy", "Potential energy"],
+              "answer": "Potential energy"
+            },
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "The type of energy stored in fuels is called",
+              "options": ["Light energy", "Kinetic energy", "Chemical energy", "Electrical energy"],
+              "answer": "Chemical energy"
+            },
+            {
+              "level": "JHS3",
+              "subject": "Science",
+              "type": "objective",
+              "question": "Car battery produces electrical energy from",
+              "options": ["Sound energy", "Heat energy", "Kinetic energy", "Chemical energy"],
+              "answer": "Chemical energy"
+            }
+          ]
+          
+        
+      
+    
+  

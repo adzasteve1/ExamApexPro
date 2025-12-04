@@ -1,1 +1,274 @@
-[]
+[
+  {
+    "username": "steven",
+    "score": 0,
+    "total": 2,
+    "subject": "Science",
+    "level": "JHS1",
+    "timestamp": "2025-12-02T03:57:01.844557"
+  },
+  {
+    "username": "steven",
+    "score": 0,
+    "total": 2,
+    "subject": "Science",
+    "level": "JHS1",
+    "timestamp": "2025-12-02T03:57:08.119688"
+  },
+  {
+    "username": "Anonymous",
+    "score": 1,
+    "total": 1,
+    "subject": "All",
+    "level": "JHS1",
+    "timestamp": "2025-12-02T04:15:44.421414"
+  },
+  {
+    "username": "Anonymous",
+    "score": 1,
+    "total": 1,
+    "subject": "All",
+    "level": "JHS1",
+    "timestamp": "2025-12-02T04:16:00.308700"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 6,
+    "subject": "All",
+    "level": "All",
+    "timestamp": "2025-12-02T04:50:05.982328"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 6,
+    "subject": "Science",
+    "level": "All",
+    "timestamp": "2025-12-02T04:50:14.740544"
+  },
+  {
+    "username": "Anonymous",
+    "score": 1,
+    "total": 1,
+    "subject": "Science",
+    "level": "JHS1",
+    "timestamp": "2025-12-02T05:08:22.209312"
+  },
+  {
+    "username": "Anonymous",
+    "score": 1,
+    "total": 1,
+    "subject": "Science",
+    "level": "JHS1",
+    "timestamp": "2025-12-02T05:08:30.249008"
+  },
+  {
+    "username": "Anonymous",
+    "score": 2,
+    "total": 1,
+    "subject": "Science",
+    "level": "JHS1",
+    "timestamp": "2025-12-02T05:19:31.785976"
+  },
+  {
+    "username": "Anonymous",
+    "score": 2,
+    "total": 1,
+    "subject": "Science",
+    "level": "JHS1",
+    "timestamp": "2025-12-02T05:19:39.007105"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 1,
+    "subject": "Science",
+    "level": "JHS1",
+    "timestamp": "2025-12-02T05:20:00.386607"
+  },
+  {
+    "username": "Anonymous",
+    "score": 2,
+    "total": 6,
+    "subject": "All",
+    "level": "All",
+    "timestamp": "2025-12-02T05:43:28.267082"
+  },
+  {
+    "username": "Anonymous",
+    "score": 2,
+    "total": 6,
+    "subject": "Science",
+    "level": "All",
+    "timestamp": "2025-12-02T05:43:40.779510"
+  },
+  {
+    "username": "Anonymous",
+    "score": 2,
+    "total": 6,
+    "subject": "Science",
+    "level": "General",
+    "timestamp": "2025-12-02T05:43:46.317121"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 2,
+    "subject": "Science",
+    "level": "All",
+    "timestamp": "2025-12-02T13:13:47.534298"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 52,
+    "subject": "All",
+    "level": "All",
+    "date": "2025-12-03 04:49:07"
+  },
+  {
+    "username": "steven",
+    "score": 0,
+    "total": 52,
+    "subject": "All",
+    "level": "All",
+    "date": "2025-12-03 04:50:15"
+  },
+  {
+    "username": "steven",
+    "score": 1,
+    "total": 1,
+    "subject": "English",
+    "level": "All",
+    "date": "2025-12-03 04:51:01"
+  },
+  {
+    "username": "steven",
+    "score": 1,
+    "total": 1,
+    "subject": "English",
+    "level": "All",
+    "date": "2025-12-03 04:51:13"
+  },
+  {
+    "username": "steven",
+    "score": 0,
+    "total": 48,
+    "subject": "Science",
+    "level": "All",
+    "date": "2025-12-03 04:52:55"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 52,
+    "subject": "All",
+    "level": "All",
+    "date": "2025-12-03 05:27:26"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 52,
+    "subject": "All",
+    "level": "All",
+    "date": "2025-12-03 05:27:42"
+  },
+  {
+    "username": "steven",
+    "score": 3,
+    "total": 48,
+    "subject": "Science",
+    "level": "All",
+    "date": "2025-12-03 05:52:46"
+  },
+  {
+    "username": "steven",
+    "score": 3,
+    "total": 48,
+    "subject": "English",
+    "level": "All",
+    "date": "2025-12-03 05:53:10"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 52,
+    "subject": "All",
+    "level": "All",
+    "date": "2025-12-03 06:02:17"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 52,
+    "subject": "All",
+    "level": "All",
+    "date": "2025-12-03 06:02:28"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 52,
+    "subject": "All",
+    "level": "All",
+    "date": "2025-12-03 06:03:12"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 52,
+    "subject": "Science",
+    "level": "All",
+    "date": "2025-12-03 06:03:27"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 48,
+    "subject": "Science",
+    "level": "All",
+    "date": "2025-12-03 06:22:04"
+  },
+  {
+    "username": "Anonymous",
+    "score": 1,
+    "total": 2,
+    "subject": "Math",
+    "level": "All",
+    "date": "2025-12-03 10:44:30"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 2,
+    "subject": "Math",
+    "level": "All",
+    "date": "2025-12-03 10:54:36"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 2,
+    "subject": "Math",
+    "level": "All",
+    "date": "2025-12-03 10:55:50"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 2,
+    "subject": "Social Studies",
+    "level": "All",
+    "date": "2025-12-03 10:56:40"
+  },
+  {
+    "username": "Anonymous",
+    "score": 0,
+    "total": 1,
+    "subject": "Social Studies",
+    "level": "All",
+    "date": "2025-12-03 10:56:59"
+  }
+]

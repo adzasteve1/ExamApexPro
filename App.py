@@ -1,389 +1,279 @@
-# app.py -- Modern Learning App (Option B with Subjective "Show Answer" button)
 import streamlit as st
 import json
-import random
-from pathlib import Path
-from datetime import datetime
+from typing import Any
 
-# -------------------------
-# Config
-# -------------------------
-st.set_page_config(page_title="Learning Hub — Modern", page_icon="📘", layout="centered")
+# -----------------------------
+# Helpers
+# -----------------------------
+@st.cache_data
+def load_questions(path="questions.json"):
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
-BASE_DIR = Path(__file__).parent
-QUESTIONS_FILE = BASE_DIR / "questions.json"
-SCORES_FILE = BASE_DIR / "scores.json"
-ADMIN_PASSWORD = "admin123"  # change this if you want
+def format_subjective_answer(ans: Any) -> str:
+    """Return a readable string for answer which may be str/list/dict."""
+    if isinstance(ans, str):
+        return ans
+    if isinstance(ans, list):
+        return "\n".join(str(x) for x in ans)
+    if isinstance(ans, dict):
+        lines = []
+        for k, v in ans.items():
+            lines.append(f"{k}:")
+            if isinstance(v, dict):
+                for kk, vv in v.items():
+                    lines.append(f"  - {kk}: {vv}")
+            elif isinstance(v, list):
+                for item in v:
+                    lines.append(f"  - {item}")
+            else:
+                lines.append(f"  - {v}")
+        return "\n".join(lines)
+    return str(ans)
 
-# -------------------------
-# Helpers: JSON IO & flatten
-# -------------------------
-def read_json(path):
+def get_subjects_levels(questions):
+    subjects = sorted({q.get("subject", "Unknown") for q in questions})
+    levels = sorted({q.get("level", "Unknown") for q in questions})
+    return subjects, levels
+
+# -----------------------------
+# Load data & init session
+# -----------------------------
+questions = load_questions()
+
+if "q_index" not in st.session_state:
+    st.session_state.q_index = 0
+
+# permanent saved answers (only saved when user navigates or submits)
+# keys: int(question index in filtered list) -> string answer
+if "answers" not in st.session_state:
+    st.session_state.answers = {}
+
+# temporary widget values for the currently-displayed question
+if "temp_answers" not in st.session_state:
+    st.session_state.temp_answers = {}
+
+if "filtered" not in st.session_state:
+    st.session_state.filtered = []  # filtered questions for selected subject+level
+
+# UI: title
+st.set_page_config(page_title="Smart Quiz App", layout="centered")
+st.title("📘 Smart Quiz App — One Question at a Time")
+
+# -----------------------------
+# Sidebar: select subject & level
+# -----------------------------
+subjects, levels = get_subjects_levels(questions)
+
+sel_subject = st.selectbox("Subject", ["-- Select --"] + subjects)
+sel_level = st.selectbox("Level", ["-- Select --"] + levels)
+
+# When selection changes, filter and reset index/answers/temp
+if sel_subject != "-- Select --" and sel_level != "-- Select --":
+    # If different from current filtered selection, reset
+    current_first = st.session_state.filtered[0] if st.session_state.filtered else None
+    if (not st.session_state.filtered) or current_first.get("subject") != sel_subject or current_first.get("level") != sel_level:
+        st.session_state.filtered = [q for q in questions if q.get("subject") == sel_subject and q.get("level") == sel_level]
+        st.session_state.q_index = 0
+        st.session_state.answers = {}
+        st.session_state.temp_answers = {}
+
+# If nothing filtered, show message and stop rendering quiz
+if not st.session_state.filtered:
+    st.info("Choose a Subject and Level to load questions.")
+    st.stop()
+
+filtered = st.session_state.filtered
+total = len(filtered)
+
+# -----------------------------
+# Save current widget value (called before navigation or on submit)
+# -----------------------------
+def save_current_temp():
+    """Save current temp widget into answers dict (only if user actually chose an option or typed)."""
+    q_idx = st.session_state.q_index
+    q = filtered[q_idx]
+
+    key_temp = f"temp_{q_idx}"
+    # If user hasn't interacted, temp may not exist. Use .get
+    temp_val = st.session_state.temp_answers.get(key_temp, None)
+
+    # For objective questions, the placeholder value is "-- Select --" (we don't save that)
+    if "options" in q and q.get("options"):
+        if temp_val and temp_val != "-- Select --":
+            st.session_state.answers[q_idx] = temp_val
+        else:
+            # If placeholder or None, ensure we don't save an empty answer
+            if q_idx in st.session_state.answers:
+                # don't erase previously saved answer on a navigation unless user deliberately changed to placeholder
+                pass
+    else:
+        # subjective: save whatever (even empty string counts as attempted if non-empty)
+        if temp_val is not None:
+            # store string (strip trailing/leading whitespace)
+            st.session_state.answers[q_idx] = str(temp_val).strip()
+
+# -----------------------------
+# Navigation callbacks
+# -----------------------------
+def go_next():
+    save_current_temp()
+    if st.session_state.q_index < total - 1:
+        st.session_state.q_index += 1
+
+def go_prev():
+    save_current_temp()
+    if st.session_state.q_index > 0:
+        st.session_state.q_index -= 1
+
+# -----------------------------
+# Render current question
+# -----------------------------
+q_index = st.session_state.q_index
+q = filtered[q_index]
+
+st.progress((q_index + 1) / total)
+st.markdown(f"### Question {q_index + 1} of {total}")
+st.write(q.get("question", ""))
+
+# Determine widget key and current temp value
+temp_key = f"temp_{q_index}"
+# initialize temp value from saved answers if exists and temp not set yet
+if temp_key not in st.session_state.temp_answers:
+    # fill temp from saved answers if present
+    if q_index in st.session_state.answers:
+        st.session_state.temp_answers[temp_key] = st.session_state.answers[q_index]
+    else:
+        # default placeholder for objective or empty string for subjective
+        if q.get("options"):
+            st.session_state.temp_answers[temp_key] = "-- Select --"
+        else:
+            st.session_state.temp_answers[temp_key] = st.session_state.answers.get(q_index, "")
+
+# Render input but bind to temp_answers (we only permanently save on nav/submit)
+if q.get("options"):
+    # insert placeholder at front
+    options_with_placeholder = ["-- Select --"] + list(q["options"])
+    # compute index for the radio display
+    current_temp = st.session_state.temp_answers.get(temp_key, "-- Select --")
     try:
-        if path.exists():
-            with open(path, "r", encoding="utf-8") as f:
-                return json.load(f)
-    except Exception:
-        return []
-    return []
+        selected_idx = options_with_placeholder.index(current_temp)
+    except ValueError:
+        selected_idx = 0
+    # show radio; using key ensures Streamlit stores widget state under that key
+    val = st.radio("Choose an option:", options_with_placeholder, index=selected_idx, key=temp_key)
+    # keep temp in session_state.temp_answers updated automatically (st actually writes to key)
+    st.session_state.temp_answers[temp_key] = val
 
-def write_json(path, data):
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-
-def flatten_questions(raw):
-    out = []
-    if not isinstance(raw, list):
-        return out
-    for entry in raw:
-        if not isinstance(entry, dict):
-            continue
-        if "questions" in entry and isinstance(entry["questions"], list):
-            for q in entry["questions"]:
-                if isinstance(q, dict) and q.get("question"):
-                    out.append(normalize_question(q))
-        if "theory" in entry and isinstance(entry["theory"], list):
-            for q in entry["theory"]:
-                if isinstance(q, dict) and q.get("question"):
-                    out.append(normalize_question(q))
-        if "question" in entry and ("options" in entry or "answer" in entry):
-            out.append(normalize_question(entry))
-    return out
-
-def normalize_question(q):
-    normalized = {}
-    normalized["question"] = q.get("question", "").strip()
-    opts = q.get("options")
-    if isinstance(opts, list):
-        normalized["options"] = [str(o) for o in opts]
-    elif isinstance(opts, str):
-        normalized["options"] = [o.strip() for o in opts.split(",") if o.strip()]
-    else:
-        normalized["options"] = []
-    normalized["answer"] = q.get("answer", "")
-    normalized["explanation"] = q.get("explanation", "")
-    normalized["subject"] = q.get("subject", "General")
-    normalized["level"] = q.get("level", "General")
-    normalized["image"] = q.get("image") if q.get("image") else None
-    return normalized
-
-# Ensure files exist
-if not QUESTIONS_FILE.exists():
-    write_json(QUESTIONS_FILE, [])
-if not SCORES_FILE.exists():
-    write_json(SCORES_FILE, [])
-
-raw_data = read_json(QUESTIONS_FILE)
-ALL_QUESTIONS = flatten_questions(raw_data)
-ALL_SCORES = read_json(SCORES_FILE)
-
-# -------------------------
-# Session State init
-# -------------------------
-if "page" not in st.session_state:
-    st.session_state.page = "quiz"
-for k, v in {
-    "questions": [],
-    "index": 0,
-    "score": 0,
-    "username": "",
-    "subject": "All",
-    "level": "All",
-    "started": False,
-    "show_feedback": False,
-    "last_selected": None,
-    "prev_subject": None,
-    "prev_level": None,
-    "admin": False
-}.items():
-    if k not in st.session_state:
-        st.session_state[k] = v
-
-# -------------------------
-# Sidebar (filters + nav)
-# -------------------------
-st.sidebar.title("Controls")
-st.session_state.username = st.sidebar.text_input("Your name (optional)", value=st.session_state.username)
-
-subjects = ["All"] + sorted({q.get("subject", "General") for q in ALL_QUESTIONS})
-levels = ["All"] + sorted({q.get("level", "General") for q in ALL_QUESTIONS})
-
-st.session_state.subject = st.sidebar.selectbox(
-    "Subject", subjects,
-    index=subjects.index(st.session_state.subject) if st.session_state.subject in subjects else 0
-)
-st.session_state.level = st.sidebar.selectbox(
-    "Level", levels,
-    index=levels.index(st.session_state.level) if st.session_state.level in levels else 0
-)
-
-if st.sidebar.button("Home"):
-    st.session_state.page = "home"
-if st.sidebar.button("Admin"):
-    st.session_state.page = "admin"
-if st.sidebar.button("Restart Quiz"):
-    st.session_state.started = False
-    st.session_state.questions = []
-    st.session_state.index = 0
-    st.session_state.score = 0
-    st.session_state.show_feedback = False
-    st.session_state.last_selected = None
-    st.session_state.page = "quiz"
-
-# -------------------------
-# Quiz loader
-# -------------------------
-def load_questions_for_session():
-    filtered = [
-        q for q in ALL_QUESTIONS
-        if (st.session_state.subject == "All" or q.get("subject", "General") == st.session_state.subject)
-        and (st.session_state.level == "All" or q.get("level", "General") == st.session_state.level)
-    ]
-    filtered = [q for q in filtered if q.get("question")]
-    if not filtered:
-        st.session_state.questions = []
-        st.session_state.started = False
-        return
-    random.shuffle(filtered)
-    st.session_state.questions = filtered
-    st.session_state.index = 0
-    st.session_state.score = 0
-    st.session_state.started = True
-    st.session_state.show_feedback = False
-    st.session_state.last_selected = None
-
-if (st.session_state.prev_subject != st.session_state.subject) or (st.session_state.prev_level != st.session_state.level) or (not st.session_state.started):
-    st.session_state.prev_subject = st.session_state.subject
-    st.session_state.prev_level = st.session_state.level
-    load_questions_for_session()
-
-# -------------------------
-# Helper: save score
-# -------------------------
-def save_score(username, score, total, subject, level):
-    entry = {
-        "username": username or "Anonymous",
-        "score": score,
-        "total": total,
-        "subject": subject,
-        "level": level,
-        "timestamp": datetime.now().isoformat()
-    }
-    scores = read_json(SCORES_FILE)
-    scores.append(entry)
-    write_json(SCORES_FILE, scores)
-
-# -------------------------
-# Pages
-# -------------------------
-def page_home():
-    st.title("📘 Learning Hub — Home")
-    st.write("This is the modern learning interface. The quiz starts automatically on open (one question at a time). Use the sidebar to change subject/level or restart.")
-    st.write("")
-    st.header("All questions (preview)")
-    if not ALL_QUESTIONS:
-        st.info("No questions found. Upload via Admin.")
-    else:
-        for i, q in enumerate(ALL_QUESTIONS, start=1):
-            with st.expander(f"{i}. [{q.get('subject')} - {q.get('level')}] {q.get('question')[:120]}"):
-                if q.get("options"):
-                    st.write("Options:", " | ".join(q.get("options")))
-                st.write("Answer:", q.get("answer") if q.get("answer") else "(subjective/theory)")
-                if q.get("explanation"):
-                    st.info("Explanation: " + str(q.get("explanation")))
-    st.header("Leaderboard (Top 5)")
-    scores = read_json(SCORES_FILE)
-    if scores:
-        top = sorted(scores, key=lambda s: s.get("score", 0), reverse=True)[:5]
-        for i, s in enumerate(top, start=1):
-            st.write(f"{i}. {s.get('username','Anonymous')} — {s.get('score')}/{s.get('total')} — {s.get('subject')} {s.get('level')}")
-    else:
-        st.info("No scores yet.")
-
-def page_quiz():
-    st.title("📘 Learning Hub — Quiz")
-    if not st.session_state.questions:
-        st.warning("No questions available for this subject/level. Use the sidebar to select a different filter or add questions in Admin.")
-        return
-
-    total = len(st.session_state.questions)
-    idx = st.session_state.index
-    q = st.session_state.questions[idx]
-
-    st.markdown(f"**Question {idx+1} of {total}** — *{q.get('subject','General')} / {q.get('level','General')}*")
-    st.write("")
-    st.subheader(q.get("question"))
-
-    if q.get("image"):
-        st.image(q.get("image"))
-
-    options = q.get("options") or []
-
-    # -------------------------
-    # MCQ Input
-    # -------------------------
-    if options:
-        if not st.session_state.show_feedback:
-            choice = st.radio("", options, key=f"choice_{idx}")
-            st.session_state.last_selected = choice
-            c1, c2 = st.columns([1,1])
-            with c1:
-                if st.button("Submit", use_container_width=True):
-                    st.session_state.show_feedback = True
-                    correct = q.get("answer")
-                    sel = st.session_state.last_selected
-                    st.session_state._last_result = (str(sel).strip() == str(correct).strip())
-            with c2:
-                if st.button("Skip", use_container_width=True):
-                    st.session_state.index = (st.session_state.index + 1) % len(st.session_state.questions)
-                    st.session_state.show_feedback = False
-                    st.session_state.last_selected = None
-                    return
-        else:
-            res = st.session_state.get("_last_result", None)
-            correct = q.get("answer")
-            explanation = q.get("explanation")
-            if res:
-                st.success("✅ Correct")
-                st.session_state.score += 1
-            else:
-                st.error(f"❌ Wrong — correct answer: **{correct}**")
-            if explanation:
-                st.info(f"💡 Explanation: {explanation}")
-            c1, c2 = st.columns([1,1])
-            with c1:
-                if st.button("Next", use_container_width=True):
-                    st.session_state.index += 1
-                    st.session_state.show_feedback = False
-                    st.session_state.last_selected = None
-                    return
-            with c2:
-                if st.button("Finish Quiz", use_container_width=True):
-                    st.session_state.index = len(st.session_state.questions)
-                    st.session_state.show_feedback = False
-                    return
-
-    # -------------------------
-    # Subjective Input
-    # -------------------------
-    else:
-        choice = st.text_input("", key=f"input_{idx}", placeholder="Type your answer here...")
-        st.session_state.last_selected = choice
-        if not st.session_state.show_feedback:
-            if st.button("Show Answer", key=f"show_{idx}"):
-                st.session_state.show_feedback = True
-        else:
-            correct = q.get("answer")
-            explanation = q.get("explanation")
-            st.info("Answer revealed (subjective):")
-            if isinstance(correct, (dict, list)):
-                st.json(correct)
-            else:
-                st.write(str(correct))
-            if explanation:
-                st.info(f"💡 Explanation: {explanation}")
-            c1, c2 = st.columns([1,1])
-            with c1:
-                if st.button("Next", use_container_width=True):
-                    st.session_state.index += 1
-                    st.session_state.show_feedback = False
-                    st.session_state.last_selected = None
-                    return
-            with c2:
-                if st.button("Finish Quiz", use_container_width=True):
-                    st.session_state.index = len(st.session_state.questions)
-                    st.session_state.show_feedback = False
-                    return
-
-    # -------------------------
-    # End of quiz
-    # -------------------------
-    if st.session_state.index >= total:
-        st.success("🎉 Quiz complete!")
-        st.write(f"**Name:** {st.session_state.username or 'Anonymous'}")
-        st.write(f"**Score:** {st.session_state.score} / {total}")
-        save_score(st.session_state.username, st.session_state.score, total, st.session_state.subject, st.session_state.level)
-        st.download_button("Download scores (JSON)", json.dumps(read_json(SCORES_FILE), indent=2), file_name="scores.json")
-        if st.button("Restart", use_container_width=True):
-            load_questions_for_session()
-            return
-
-def page_admin():
-    st.title("🔧 Admin")
-    if not st.session_state.admin:
-        pw = st.text_input("Admin password", type="password")
-        if st.button("Login"):
-            if pw == ADMIN_PASSWORD:
-                st.session_state.admin = True
-                st.success("Admin enabled")
-            else:
-                st.error("Wrong password")
-        return
-
-    st.success("Admin mode active")
-    st.write("Upload a `questions.json` (list) or add questions below.")
-
-    uploaded = st.file_uploader("Upload questions.json", type=["json"])
-    if uploaded:
-        try:
-            data = json.load(uploaded)
-            if isinstance(data, list):
-                if st.button("Replace questions with uploaded file"):
-                    write_json(QUESTIONS_FILE, data)
-                    st.success("Replaced questions file. Please restart the app (F5) or press Restart Quiz in sidebar.")
-                if st.button("Merge uploaded questions into existing"):
-                    existing = read_json(QUESTIONS_FILE)
-                    existing.extend(data)
-                    write_json(QUESTIONS_FILE, existing)
-                    st.success("Merged uploaded questions.")
-            else:
-                st.error("Uploaded file must be a JSON list.")
-        except Exception as e:
-            st.error(f"Upload failed: {e}")
-
-    st.subheader("Add a new question (quick)")
-    with st.form("add_q"):
-        q_text = st.text_area("Question")
-        opts = st.text_input("Comma-separated options (leave blank for subjective)")
-        ans = st.text_input("Correct answer (for MCQ ensure it matches one option)")
-        expl = st.text_area("Explanation (optional)")
-        subj = st.text_input("Subject", value="General")
-        lvl = st.text_input("Level", value="General")
-        added = st.form_submit_button("Add question")
-        if added:
-            options = [o.strip() for o in opts.split(",")] if opts else []
-            new_q = {
-                "question": q_text,
-                "options": options,
-                "answer": ans,
-                "explanation": expl,
-                "subject": subj or "General",
-                "level": lvl or "General"
-            }
-            existing = read_json(QUESTIONS_FILE)
-            existing.append(new_q)
-            write_json(QUESTIONS_FILE, existing)
-            st.success("Saved. Press Restart Quiz in sidebar to load new questions.")
-
-    st.subheader("Export")
-    if st.button("Download questions.json"):
-        st.download_button("questions.json", json.dumps(read_json(QUESTIONS_FILE), indent=2, ensure_ascii=False))
-
-    if st.button("Logout Admin"):
-        st.session_state.admin = False
-        st.session_state.page = "home"
-
-# -------------------------
-# Router
-# -------------------------
-if st.session_state.page == "home":
-    page_home()
-elif st.session_state.page == "quiz":
-    if st.session_state.index >= len(st.session_state.questions):
-        page_quiz()
-    else:
-        page_quiz()
-elif st.session_state.page == "admin":
-    page_admin()
 else:
-    page_quiz()
+    # subjective
+    val = st.text_area("Type your answer here:", value=st.session_state.temp_answers[temp_key], key=temp_key, height=140)
+    st.session_state.temp_answers[temp_key] = val
+
+# Explanation toggle (optional)
+if q.get("explanation"):
+    if st.checkbox("Show question explanation (optional)", key=f"exp_{q_index}"):
+        st.info(q.get("explanation"))
+
+# Navigation buttons (use callbacks so clicks persist across reruns)
+col1, col2, col3 = st.columns([1, 1, 1])
+with col1:
+    st.button("⬅️ Previous", on_click=go_prev, disabled=(q_index == 0))
+with col2:
+    st.button("Next ➡️", on_click=go_next, disabled=(q_index == total - 1))
+with col3:
+    # Save current temp then compute results
+    def submit_quiz():
+        # save current temp
+        save_current_temp()
+        # Build results and show in a new streamlit element by setting a flag in session_state
+        st.session_state.show_results = True
+
+    st.button("✅ Submit Quiz", on_click=submit_quiz)
+
+st.markdown("---")
+# -----------------------------
+# Show results if requested
+# -----------------------------
+if st.session_state.get("show_results", False):
+    # Ensure current temp saved before computing
+    save_current_temp()
+
+    # Build attempted indexes (only those with a non-empty saved answer)
+    attempted = []
+    for idx, _ in enumerate(filtered):
+        if idx in st.session_state.answers:
+            ans = st.session_state.answers[idx]
+            if str(ans).strip() != "":
+                attempted.append(idx)
+
+    # Compute score and results list
+    score = 0
+    results = []
+    for idx in attempted:
+        ques = filtered[idx]
+        user_ans = st.session_state.answers.get(idx, "")
+        correct = ques.get("answer", None)
+        explanation = ques.get("explanation", "")
+
+        if ques.get("options"):  # objective
+            is_correct = (user_ans == correct)
+            if is_correct:
+                score += 1
+            results.append({
+                "index": idx,
+                "question": ques.get("question"),
+                "type": "objective",
+                "your_answer": user_ans,
+                "correct_answer": correct,
+                "explanation": explanation,
+                "is_correct": is_correct
+            })
+        else:  # subjective
+            results.append({
+                "index": idx,
+                "question": ques.get("question"),
+                "type": "subjective",
+                "your_answer": user_ans,
+                "correct_answer": format_subjective_answer(correct) if correct is not None else "No model answer",
+                "explanation": explanation
+            })
+
+    st.header("📊 Quiz Results (attempted questions only)")
+    st.subheader(f"Score (objective): {score} / {sum(1 for r in results if r['type']=='objective')}")
+    st.write(f"Total attempted questions: {len(results)}")
+
+    for i, r in enumerate(results, start=1):
+        st.markdown(f"### Q{i}. {r['question']}")
+        if r["type"] == "objective":
+            status = "✅ Correct" if r["is_correct"] else "❌ Incorrect"
+            st.markdown(f"- **Your answer:** {r['your_answer']} — {status}")
+            st.markdown(f"- **Correct answer:** {r['correct_answer']}")
+            if r.get("explanation"):
+                st.info(f"Explanation: {r['explanation']}")
+        else:
+            st.markdown(f"- **Your answer:** {r['your_answer']}")
+            st.markdown(f"- **Model answer:**\n{r['correct_answer']}")
+            if r.get("explanation"):
+                st.info(f"Explanation: {r['explanation']}")
+        st.markdown("---")
+
+    # Buttons after results: restart or change subject/level
+    rc1, rc2 = st.columns(2)
+    with rc1:
+        if st.button("🔄 Restart same quiz"):
+            st.session_state.q_index = 0
+            st.session_state.answers = {}
+            st.session_state.temp_answers = {}
+            st.session_state.show_results = False
+            st.experimental_rerun()
+    with rc2:
+        if st.button("🔙 Change Subject/Level"):
+            st.session_state.filtered = []
+            st.session_state.q_index = 0
+            st.session_state.answers = {}
+            st.session_state.temp_answers = {}
+            st.session_state.show_results = False
+            st.experimental_rerun()
+
+
