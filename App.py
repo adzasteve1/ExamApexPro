@@ -1,6 +1,8 @@
 import streamlit as st
 import json
+import random
 from typing import Any
+import datetime
 
 # -----------------------------
 # Helpers
@@ -44,81 +46,55 @@ questions = load_questions()
 if "q_index" not in st.session_state:
     st.session_state.q_index = 0
 
-# permanent saved answers (only saved when user navigates or submits)
-# keys: int(question index in filtered list) -> string answer
 if "answers" not in st.session_state:
     st.session_state.answers = {}
 
-# temporary widget values for the currently-displayed question
 if "temp_answers" not in st.session_state:
     st.session_state.temp_answers = {}
 
 if "filtered" not in st.session_state:
-    st.session_state.filtered = []  # filtered questions for selected subject+level
+    st.session_state.filtered = []
 
-# UI: title
-st.set_page_config(page_title="Smart Quiz App", layout="centered")
-st.title("📘 Smart Quiz App — One Question at a Time")
-
-# -----------------------------
-# Sidebar: select subject & level
-# -----------------------------
-subjects, levels = get_subjects_levels(questions)
-
-sel_subject = st.selectbox("Subject", ["-- Select --"] + subjects)
-sel_level = st.selectbox("Level", ["-- Select --"] + levels)
-
-# When selection changes, filter and reset index/answers/temp
-if sel_subject != "-- Select --" and sel_level != "-- Select --":
-    # If different from current filtered selection, reset
-    current_first = st.session_state.filtered[0] if st.session_state.filtered else None
-    if (not st.session_state.filtered) or current_first.get("subject") != sel_subject or current_first.get("level") != sel_level:
-        st.session_state.filtered = [q for q in questions if q.get("subject") == sel_subject and q.get("level") == sel_level]
-        st.session_state.q_index = 0
-        st.session_state.answers = {}
-        st.session_state.temp_answers = {}
-
-# If nothing filtered, show message and stop rendering quiz
-if not st.session_state.filtered:
-    st.info("Choose a Subject and Level to load questions.")
-    st.stop()
-
-filtered = st.session_state.filtered
-total = len(filtered)
+if "mode" not in st.session_state:
+    st.session_state.mode = "menu"  # menu, practice, exam_of_day, mock_exam
 
 # -----------------------------
-# Save current widget value (called before navigation or on submit)
+# Utility Functions
 # -----------------------------
+def reset_quiz(filtered_questions):
+    st.session_state.filtered = filtered_questions
+    st.session_state.q_index = 0
+    st.session_state.answers = {}
+    st.session_state.temp_answers = {}
+    st.session_state.show_results = False
+
+def pick_mock_exam(q_list, count):
+    if len(q_list) < count:
+        count = len(q_list)
+    return random.sample(q_list, count)
+
+def get_daily_exam():
+    today = datetime.date.today().strftime("%Y-%m-%d")
+    random.seed(today)
+    return pick_mock_exam(questions, 20)
+
 def save_current_temp():
-    """Save current temp widget into answers dict (only if user actually chose an option or typed)."""
+    """Save current temp widget into answers dict."""
     q_idx = st.session_state.q_index
-    q = filtered[q_idx]
-
+    q = st.session_state.filtered[q_idx]
     key_temp = f"temp_{q_idx}"
-    # If user hasn't interacted, temp may not exist. Use .get
     temp_val = st.session_state.temp_answers.get(key_temp, None)
 
-    # For objective questions, the placeholder value is "-- Select --" (we don't save that)
     if "options" in q and q.get("options"):
         if temp_val and temp_val != "-- Select --":
             st.session_state.answers[q_idx] = temp_val
-        else:
-            # If placeholder or None, ensure we don't save an empty answer
-            if q_idx in st.session_state.answers:
-                # don't erase previously saved answer on a navigation unless user deliberately changed to placeholder
-                pass
     else:
-        # subjective: save whatever (even empty string counts as attempted if non-empty)
         if temp_val is not None:
-            # store string (strip trailing/leading whitespace)
             st.session_state.answers[q_idx] = str(temp_val).strip()
 
-# -----------------------------
-# Navigation callbacks
-# -----------------------------
 def go_next():
     save_current_temp()
-    if st.session_state.q_index < total - 1:
+    if st.session_state.q_index < len(st.session_state.filtered) - 1:
         st.session_state.q_index += 1
 
 def go_prev():
@@ -127,8 +103,87 @@ def go_prev():
         st.session_state.q_index -= 1
 
 # -----------------------------
-# Render current question
+# UI: Mode Selection Menu
 # -----------------------------
+st.set_page_config(page_title="Smart Quiz App", layout="centered")
+st.title("📘 Exam Master Prep")
+
+if st.session_state.mode == "menu":
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        if st.button("📚 Practice Mode"):
+            st.session_state.mode = "practice"
+    with col2:
+        if st.button("⏳ Exam of the Day"):
+            filtered_questions = get_daily_exam()
+            if not filtered_questions:
+                st.error("🚫 No questions available for today's exam.")
+            else:
+                reset_quiz(filtered_questions)
+                st.session_state.mode = "exam"
+    with col3:
+        if st.button("📝 Mock Exam Generator"):
+            st.session_state.mode = "mock"
+    st.stop()  # stop further rendering until mode selected
+
+# -----------------------------
+# Practice Mode
+# -----------------------------
+if st.session_state.mode == "practice":
+    st.header("📚 Practice Mode")
+    subjects, levels = get_subjects_levels(questions)
+    sel_subject = st.selectbox("Select Subject", ["-- Select --"] + subjects)
+    sel_level = st.selectbox("Select Level", ["-- Select --"] + levels)
+
+    if st.button("Load Questions"):
+        if sel_subject == "-- Select --" or sel_level == "-- Select --":
+            st.error("🚫 Please select both Subject and Level.")
+        else:
+            filtered_questions = [q for q in questions if q.get("subject") == sel_subject and q.get("level") == sel_level]
+            if not filtered_questions:
+                st.error("🚫 No questions found for this subject and level.")
+            else:
+                reset_quiz(filtered_questions)
+                st.session_state.mode = "exam"
+
+    if st.button("Back to Menu"):
+        st.session_state.mode = "menu"
+    st.stop()
+
+# -----------------------------
+# Mock Exam Generator
+# -----------------------------
+if st.session_state.mode == "mock":
+    st.header("📝 Mock Exam Generator")
+    subjects, levels = get_subjects_levels(questions)
+    sel_subject = st.selectbox("Select Subject", ["-- Select --"] + subjects)
+    sel_level = st.selectbox("Select Level", ["-- Select --"] + levels)
+    count = st.slider("Number of Questions", 10, 60, 20)
+
+    if st.button("Generate Mock Exam"):
+        if sel_subject == "-- Select --" or sel_level == "-- Select --":
+            st.error("🚫 Please select both Subject and Level.")
+        else:
+            base = [q for q in questions if q.get("subject") == sel_subject and q.get("level") == sel_level]
+            if not base:
+                st.error("🚫 No questions available for this selection.")
+            else:
+                filtered_questions = pick_mock_exam(base, count)
+                reset_quiz(filtered_questions)
+                st.session_state.mode = "exam"
+
+    if st.button("Back to Menu"):
+        st.session_state.mode = "menu"
+    st.stop()
+
+# -----------------------------
+# ----------------------------- EXAM DISPLAY -----------------------------
+filtered = st.session_state.filtered
+if not filtered:
+    st.info("No questions loaded. Go back to Menu and select a mode.")
+    st.stop()
+
+total = len(filtered)
 q_index = st.session_state.q_index
 q = filtered[q_index]
 
@@ -136,78 +191,59 @@ st.progress((q_index + 1) / total)
 st.markdown(f"### Question {q_index + 1} of {total}")
 st.write(q.get("question", ""))
 
-# Determine widget key and current temp value
 temp_key = f"temp_{q_index}"
-# initialize temp value from saved answers if exists and temp not set yet
 if temp_key not in st.session_state.temp_answers:
-    # fill temp from saved answers if present
     if q_index in st.session_state.answers:
         st.session_state.temp_answers[temp_key] = st.session_state.answers[q_index]
     else:
-        # default placeholder for objective or empty string for subjective
         if q.get("options"):
             st.session_state.temp_answers[temp_key] = "-- Select --"
         else:
             st.session_state.temp_answers[temp_key] = st.session_state.answers.get(q_index, "")
 
-# Render input but bind to temp_answers (we only permanently save on nav/submit)
+# -----------------------------
+# Objective / Subjective Inputs
+# -----------------------------
 if q.get("options"):
-    # insert placeholder at front
     options_with_placeholder = ["-- Select --"] + list(q["options"])
-    # compute index for the radio display
     current_temp = st.session_state.temp_answers.get(temp_key, "-- Select --")
     try:
         selected_idx = options_with_placeholder.index(current_temp)
     except ValueError:
         selected_idx = 0
-    # show radio; using key ensures Streamlit stores widget state under that key
     val = st.radio("Choose an option:", options_with_placeholder, index=selected_idx, key=temp_key)
-    # keep temp in session_state.temp_answers updated automatically (st actually writes to key)
     st.session_state.temp_answers[temp_key] = val
-
 else:
-    # subjective
-    val = st.text_area("Type your answer here:", value=st.session_state.temp_answers[temp_key], key=temp_key, height=140)
+    val = st.text_area("Type your answer here:", value=st.session_state.temp_answers[temp_key], key=temp_key)
     st.session_state.temp_answers[temp_key] = val
 
-# Explanation toggle (optional)
+# Explanation toggle
 if q.get("explanation"):
     if st.checkbox("Show question explanation (optional)", key=f"exp_{q_index}"):
         st.info(q.get("explanation"))
 
-# Navigation buttons (use callbacks so clicks persist across reruns)
+# -----------------------------
+# Navigation Buttons
+# -----------------------------
 col1, col2, col3 = st.columns([1, 1, 1])
 with col1:
     st.button("⬅️ Previous", on_click=go_prev, disabled=(q_index == 0))
 with col2:
     st.button("Next ➡️", on_click=go_next, disabled=(q_index == total - 1))
 with col3:
-    # Save current temp then compute results
     def submit_quiz():
-        # save current temp
         save_current_temp()
-        # Build results and show in a new streamlit element by setting a flag in session_state
         st.session_state.show_results = True
-
     st.button("✅ Submit Quiz", on_click=submit_quiz)
 
 st.markdown("---")
+
 # -----------------------------
-# Show results if requested
+# Show Results
 # -----------------------------
 if st.session_state.get("show_results", False):
-    # Ensure current temp saved before computing
     save_current_temp()
-
-    # Build attempted indexes (only those with a non-empty saved answer)
-    attempted = []
-    for idx, _ in enumerate(filtered):
-        if idx in st.session_state.answers:
-            ans = st.session_state.answers[idx]
-            if str(ans).strip() != "":
-                attempted.append(idx)
-
-    # Compute score and results list
+    attempted = [idx for idx, _ in enumerate(filtered) if idx in st.session_state.answers and str(st.session_state.answers[idx]).strip() != ""]
     score = 0
     results = []
     for idx in attempted:
@@ -215,29 +251,16 @@ if st.session_state.get("show_results", False):
         user_ans = st.session_state.answers.get(idx, "")
         correct = ques.get("answer", None)
         explanation = ques.get("explanation", "")
-
-        if ques.get("options"):  # objective
+        if ques.get("options"):
             is_correct = (user_ans == correct)
             if is_correct:
                 score += 1
-            results.append({
-                "index": idx,
-                "question": ques.get("question"),
-                "type": "objective",
-                "your_answer": user_ans,
-                "correct_answer": correct,
-                "explanation": explanation,
-                "is_correct": is_correct
-            })
-        else:  # subjective
-            results.append({
-                "index": idx,
-                "question": ques.get("question"),
-                "type": "subjective",
-                "your_answer": user_ans,
-                "correct_answer": format_subjective_answer(correct) if correct is not None else "No model answer",
-                "explanation": explanation
-            })
+            results.append({"index": idx, "question": ques.get("question"), "type": "objective",
+                            "your_answer": user_ans, "correct_answer": correct, "explanation": explanation, "is_correct": is_correct})
+        else:
+            results.append({"index": idx, "question": ques.get("question"), "type": "subjective",
+                            "your_answer": user_ans, "correct_answer": format_subjective_answer(correct) if correct else "No model answer",
+                            "explanation": explanation})
 
     st.header("📊 Quiz Results (attempted questions only)")
     st.subheader(f"Score (objective): {score} / {sum(1 for r in results if r['type']=='objective')}")
@@ -258,15 +281,10 @@ if st.session_state.get("show_results", False):
                 st.info(f"Explanation: {r['explanation']}")
         st.markdown("---")
 
-    # Buttons after results: restart or change subject/level
     rc1, rc2 = st.columns(2)
     with rc1:
         if st.button("🔄 Restart same quiz"):
-            st.session_state.q_index = 0
-            st.session_state.answers = {}
-            st.session_state.temp_answers = {}
-            st.session_state.show_results = False
-            st.experimental_rerun()
+            reset_quiz(st.session_state.filtered)
     with rc2:
         if st.button("🔙 Change Subject/Level"):
             st.session_state.filtered = []
@@ -274,6 +292,4 @@ if st.session_state.get("show_results", False):
             st.session_state.answers = {}
             st.session_state.temp_answers = {}
             st.session_state.show_results = False
-            st.experimental_rerun()
-
-
+            st.session_state.mode = "menu"
