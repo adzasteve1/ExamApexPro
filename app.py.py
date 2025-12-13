@@ -4,6 +4,53 @@ import random
 from typing import Any
 import datetime
 
+# =========================
+# PWA CONFIG INJECTION
+# =========================
+st.markdown("""
+<link rel="manifest" href="/static/manifest.json">
+<meta name="theme-color" content="#0d6efd">
+
+<!-- iOS support -->
+<link rel="apple-touch-icon" href="/static/icons/icon-152.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Exam Master App">
+
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/static/service-worker.js')
+    .then(reg => console.log("Service worker registered:", reg))
+    .catch(err => console.log("Service worker error:", err));
+}
+</script>
+""", unsafe_allow_html=True)
+
+# -----------------------------
+# Page config
+# -----------------------------
+st.set_page_config(page_title="Smart Quiz App", layout="centered")
+
+# -----------------------------
+# Persistent Share / Add to Home Screen Banner
+# -----------------------------
+if "banner_shown" not in st.session_state:
+    st.session_state.banner_shown = False
+
+if not st.session_state.banner_shown:
+    with st.expander("📌 Quick Access & Share Tips", expanded=True):
+        st.markdown("""
+**Add to Home Screen (Shortcut):**  
+- **Android:** Tap browser menu → **Add to Home screen**  
+- **iOS (Safari):** Tap **Share → Add to Home Screen**  
+
+**Share App with friends:**  
+- Tap **Copy App Link** button below to copy the app URL and send it.
+""")
+        if st.button("📋 Copy App Link"):
+            st.write("Copy this link manually: `https://examapexpro.streamlit.app`")
+    st.session_state.banner_shown = True
+
 # -----------------------------
 # Helpers
 # -----------------------------
@@ -13,7 +60,6 @@ def load_questions(path="questions.json"):
         return json.load(f)
 
 def format_subjective_answer(ans: Any) -> str:
-    """Return a readable string for answer which may be str/list/dict."""
     if isinstance(ans, str):
         return ans
     if isinstance(ans, list):
@@ -45,16 +91,12 @@ questions = load_questions()
 
 if "q_index" not in st.session_state:
     st.session_state.q_index = 0
-
 if "answers" not in st.session_state:
     st.session_state.answers = {}
-
 if "temp_answers" not in st.session_state:
     st.session_state.temp_answers = {}
-
 if "filtered" not in st.session_state:
     st.session_state.filtered = []
-
 if "mode" not in st.session_state:
     st.session_state.mode = "menu"  # menu, practice, exam_of_day, mock_exam
 
@@ -79,7 +121,6 @@ def get_daily_exam():
     return pick_mock_exam(questions, 20)
 
 def save_current_temp():
-    """Save current temp widget into answers dict."""
     q_idx = st.session_state.q_index
     q = st.session_state.filtered[q_idx]
     key_temp = f"temp_{q_idx}"
@@ -105,7 +146,6 @@ def go_prev():
 # -----------------------------
 # UI: Mode Selection Menu
 # -----------------------------
-st.set_page_config(page_title="Smart Quiz App", layout="centered")
 st.title("📘 Exam Master Prep")
 
 if st.session_state.mode == "menu":
@@ -124,7 +164,7 @@ if st.session_state.mode == "menu":
     with col3:
         if st.button("📝 Mock Exam Generator"):
             st.session_state.mode = "mock"
-    st.stop()  # stop further rendering until mode selected
+    st.stop()
 
 # -----------------------------
 # Practice Mode
@@ -177,7 +217,8 @@ if st.session_state.mode == "mock":
     st.stop()
 
 # -----------------------------
-# ----------------------------- EXAM DISPLAY -----------------------------
+# Exam Display
+# -----------------------------
 filtered = st.session_state.filtered
 if not filtered:
     st.info("No questions loaded. Go back to Menu and select a mode.")

@@ -419,7 +419,7 @@
       "subject": "Science",
       "level": "JHS3",
       "question": "The number required to make the following chemical equation balanced is H2 + O2 → H2O",
-      "options": ["3", "1/2", "1", "1/3"],
+      "options": ["3", "1/2", "1", "2"],
       "answer": "2"
     },
     {
@@ -1097,8 +1097,3100 @@
               "question": "Car battery produces electrical energy from",
               "options": ["Sound energy", "Heat energy", "Kinetic energy", "Chemical energy"],
               "answer": "Chemical energy"
-            }
-          ]
+            },
+            
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Which of the following is a component of the environment?",
+                "options": ["Air", "Newspapers", "Television", "Money"],
+                "answer": "Air"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "The immediate surroundings of a person are called the",
+                "options": ["Community", "Environment", "Household", "Locality"],
+                "answer": "Environment"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Which human activity is most responsible for deforestation in Ghana?",
+                "options": ["Fishing", "Road construction", "Illegal mining (galamsey)", "Weaving"],
+                "answer": "Illegal mining (galamsey)"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "One major effect of water pollution is",
+                "options": ["Increase in fish population", "Spread of diseases", "Increased rainfall", "Improved sanitation"],
+                "answer": "Spread of diseases"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "The organ of government responsible for making laws is the",
+                "options": ["Judiciary", "Electoral Commission", "Executive", "Legislature"],
+                "answer": "Legislature"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Democracy means",
+                "options": ["Rule by the rich", "Rule by the people", "Rule by soldiers", "Rule by one person"],
+                "answer": "Rule by the people"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Which of the following ensures peace during elections in Ghana?",
+                "options": ["Electoral violence", "The Police Service", "Political insults", "Tribal conflict"],
+                "answer": "The Police Service"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Culture is best described as",
+                "options": ["Food only", "Way of life of a people", "Clothing only", "Dance only"],
+                "answer": "Way of life of a people"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "A symbol that represents the authority of the state is the",
+                "options": ["School badge", "National flag", "Family name", "Clan symbol"],
+                "answer": "National flag"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Which of the following promotes national unity?",
+                "options": ["Discrimination", "Cooperation", "Corruption", "Tribalism"],
+                "answer": "Cooperation"
+              },
+            
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "A key aim of economic development is to",
+                "options": ["Increase poverty", "Improve standard of living", "Encourage laziness", "Discourage investment"],
+                "answer": "Improve standard of living"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Which of the following is a social problem in Ghana?",
+                "options": ["Hard work", "Corruption", "Patriotism", "Obedience"],
+                "answer": "Corruption"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "A peaceful community is one that is characterized by",
+                "options": ["Conflicts", "Cooperation", "Violence", "Indiscipline"],
+                "answer": "Cooperation"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Conflict resolution begins with",
+                "options": ["Listening", "Fighting", "Destroying property", "Revenge"],
+                "answer": "Listening"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Which of the following is a renewable resource?",
+                "options": ["Gold", "Bauxite", "Timber", "Crude oil"],
+                "answer": "Timber"
+              },
+            
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Latitude measures distance",
+                "options": ["North or south of the equator", "East or west of the equator", "From the Prime Meridian", "Around the globe"],
+                "answer": "North or south of the equator"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Which line divides the Earth into two equal halves?",
+                "options": ["Greenwich Meridian", "Tropic of Cancer", "Equator", "International Date Line"],
+                "answer": "Equator"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "The Prime Meridian passes through",
+                "options": ["Accra", "Greenwich", "Kumasi", "Cairo"],
+                "answer": "Greenwich"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "A scale on a map is used to show",
+                "options": ["Colours", "Direction", "Distance", "Road names"],
+                "answer": "Distance"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "The use of computers and machines in production is known as",
+                "options": ["Irrigation", "Technology", "Mining", "Agriculture"],
+                "answer": "Technology"
+              },
+            
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "One benefit of science and technology is",
+                "options": ["Unemployment", "Improved communication", "Increase in diseases", "Ignorance"],
+                "answer": "Improved communication"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Which of the following is a human right?",
+                "options": ["Right to education", "Right to steal", "Right to discriminate", "Right to insult"],
+                "answer": "Right to education"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "A responsible citizen must",
+                "options": ["Avoid voting", "Pay taxes", "Break laws", "Encourage indiscipline"],
+                "answer": "Pay taxes"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Which institution ensures justice in Ghana?",
+                "options": ["Police", "Judiciary", "NCCE", "Electoral Commission"],
+                "answer": "Judiciary"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "The main purpose of the police is to",
+                "options": ["Make laws", "Interpret laws", "Maintain law and order", "Elect the president"],
+                "answer": "Maintain law and order"
+              },
+            
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Which of these promotes social cohesion?",
+                "options": ["Ethnocentrism", "Tolerance", "Violence", "Segregation"],
+                "answer": "Tolerance"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Child labour affects children by",
+                "options": ["Increasing school attendance", "Improving health", "Exposing them to danger", "Teaching good morals"],
+                "answer": "Exposing them to danger"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Poverty can be reduced by",
+                "options": ["Hard work", "Laziness", "Corruption", "Violence"],
+                "answer": "Hard work"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "A major cause of teenage pregnancy is",
+                "options": ["Good parenting", "Peer pressure", "Abstinence", "Discipline"],
+                "answer": "Peer pressure"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "One way to reduce conflicts is to",
+                "options": ["Encourage gossip", "Promote dialogue", "Encourage insults", "Avoid rule of law"],
+                "answer": "Promote dialogue"
+              },
+            
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Tourism development in Ghana can be promoted through",
+                "options": ["Indiscipline", "Environmental cleanliness", "Tribal conflicts", "High crime rate"],
+                "answer": "Environmental cleanliness"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "The main cash crop produced in Ghana is",
+                "options": ["Rubber", "Coffee", "Cocoa", "Soya beans"],
+                "answer": "Cocoa"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Which of these is a direct effect of population growth?",
+                "options": ["Increased demand for resources", "Reduced need for schools", "Lower demand for food", "Decreased labour force"],
+                "answer": "Increased demand for resources"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Migration from rural to urban areas is called",
+                "options": ["Urban drift", "Emigration", "Immigration", "Transhumance"],
+                "answer": "Urban drift"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "The main source of government revenue is",
+                "options": ["Borrowing", "Taxes", "Donations", "Grants"],
+                "answer": "Taxes"
+              },
+            
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "An example of a natural disaster is",
+                "options": ["Festival", "Earthquake", "Trade fair", "Election"],
+                "answer": "Earthquake"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Responsible use of resources means",
+                "options": ["Wasting resources", "Using resources wisely", "Ignoring environment", "Destroying forests"],
+                "answer": "Using resources wisely"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "Which sector of the economy is involved in farming?",
+                "options": ["Primary sector", "Secondary sector", "Tertiary sector", "Financial sector"],
+                "answer": "Primary sector"
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "objective",
+                "question": "The main aim of ECOWAS is to promote",
+                "options": ["War", "Regional integration", "Segregation", "Conflict"],
+                "answer": "Regional integration"
+              },
+            
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "subjective",
+                "question": "Explain two causes of teenage pregnancy in Ghana.",
+                "answer": "Teenage pregnancy is caused by peer pressure, lack of parental guidance, poverty, and lack of access to reproductive health information."
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "subjective",
+                "question": "State three importance of the environment to human beings.",
+                "answer": "The environment provides air for breathing, water for drinking, land for farming, and materials for shelter."
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "subjective",
+                "question": "Describe two ways of promoting peace in a community.",
+                "answer": "Peace can be promoted through dialogue, tolerance, respect for diversity, and cooperation among community members."
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "subjective",
+                "question": "Explain the term democracy and give one example.",
+                "answer": "Democracy is a system of government where power resides with the people. An example is Ghana’s multiparty elections."
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "subjective",
+                "question": "List three responsibilities of a citizen.",
+                "answer": "A citizen must obey laws, pay taxes, participate in national development, and vote in elections."
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "subjective",
+                "question": "Mention two effects of rural-urban migration.",
+                "answer": "It leads to congestion in cities, pressure on social services, and decline in rural labour force."
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "subjective",
+                "question": "Explain the relevance of national symbols.",
+                "answer": "National symbols promote unity, patriotism, and national identity among citizens."
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "subjective",
+                "question": "Give two reasons why good governance is important.",
+                "answer": "Good governance ensures accountability, promotes development, and protects citizens’ rights."
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "subjective",
+                "question": "State two advantages of using technology in development.",
+                "answer": "Technology improves communication, increases productivity, and simplifies work processes."
+              },
+              {
+                "level": "JHS3",
+                "subject": "Social Studies",
+                "type": "subjective",
+                "question": "Describe two negative effects of deforestation.",
+                "answer": "Deforestation leads to soil erosion, loss of animal habitats, and climate change."
+              },
+              
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain two ways political tolerance promotes national development.",
+                  "answer": "Political tolerance promotes national development by: 1) Reducing conflicts because citizens respect differing political views. 2) Allowing peaceful elections which encourage stable governance for development."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "State two causes of chieftaincy disputes in Ghana.",
+                  "answer": "Causes of chieftaincy disputes include: 1) Conflicts over rightful lineage and succession. 2) Interference by political groups in traditional matters."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Outline two effects of irresponsible parenting.",
+                  "answer": "Effects include: 1) Increase in street children due to lack of care and support. 2) Poor academic performance as children lack guidance and supervision."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain two differences between renewable and non-renewable resources.",
+                  "answer": "Renewable resources replenish naturally (e.g. water, forests), while non-renewable resources cannot be replaced once exhausted (e.g. gold). Also, renewable resources support long-term sustainability while non-renewable resources require conservation to avoid depletion."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Give two reasons why population census is important.",
+                  "answer": "Population census is important because: 1) It provides government with accurate data for planning schools, hospitals, and roads. 2) It helps determine resource distribution and constituency boundaries."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain two functions of local government.",
+                  "answer": "Functions include: 1) Providing social services such as waste management and sanitation. 2) Promoting local development through infrastructure like markets and roads."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "State two reasons for the separation of powers under the 1992 Constitution.",
+                  "answer": "Reasons: 1) To prevent abuse of power by ensuring no branch becomes too powerful. 2) To promote accountability and checks and balances among the Executive, Legislature, and Judiciary."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Describe two ways Ghana can maintain peace during elections.",
+                  "answer": "Ways include: 1) Educating citizens on the importance of peaceful voting. 2) Security agencies enforcing law and order at polling stations."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Identify two challenges facing natural resource management in Ghana.",
+                  "answer": "Challenges include: 1) Illegal mining activities destroying land and water bodies. 2) Overexploitation of forests through uncontrolled logging."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain two effects of population growth on development.",
+                  "answer": "Effects include: 1) Pressure on social amenities like schools and hospitals. 2) Increased unemployment when job creation does not match population growth."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Describe two benefits of cultural festivals.",
+                  "answer": "Benefits include: 1) Promoting unity and social cohesion. 2) Preserving cultural heritage by transmitting traditions to younger generations."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Give two reasons why citizenship education is important.",
+                  "answer": "Citizenship education is important because: 1) It helps individuals understand their rights and responsibilities. 2) It promotes patriotism and active national participation."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain two disadvantages of ethnic conflict.",
+                  "answer": "Disadvantages include: 1) Loss of lives and property during clashes. 2) Slowdown of development due to fear and displacement of people."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "State two reasons why peace is necessary for national development.",
+                  "answer": "Peace is necessary because: 1) It attracts investors who create jobs. 2) It allows stable governance and smooth implementation of development policies."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain two importance of conserving natural resources.",
+                  "answer": "Importance: 1) Ensures sustainability for future generations. 2) Protects the environment and supports economic activities like tourism."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Describe two characteristics of a responsible citizen.",
+                  "answer": "Characteristics: 1) Obeys laws and respects authority. 2) Participates in community development activities."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Give two reasons why Ghana needs national development planning.",
+                  "answer": "Reasons: 1) To allocate resources efficiently for national needs. 2) To coordinate development efforts across regions."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "State two negative effects of irresponsible use of social media.",
+                  "answer": "Effects: 1) Spread of false information leading to panic. 2) Damage to reputations through cyberbullying and insults."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain two ways Ghana can promote national unity.",
+                  "answer": "Ways: 1) Encouraging inter-ethnic marriages to bridge cultural differences. 2) Celebrating national events that promote togetherness."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Describe two duties of a good citizen.",
+                  "answer": "Duties include: 1) Paying taxes to support national development. 2) Protecting public property and contributing to community progress."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "What is the main source of energy for most human activities?",
+                  "options": ["Solar energy", "Electricity", "Fossil fuels", "Wind energy"],
+                  "answer": "Fossil fuels"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "Which of these is a human-induced disaster?",
+                  "options": ["Earthquake", "Flood", "Bushfire", "Tornado"],
+                  "answer": "Bushfire"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "The responsible use of resources to avoid waste is called",
+                  "options": ["Conservation", "Exploitation", "Production", "Consumption"],
+                  "answer": "Conservation"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "Which of these is a renewable natural resource?",
+                  "options": ["Gold", "Timber", "Oil", "Bauxite"],
+                  "answer": "Timber"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "What is the importance of human resources to Ghana?",
+                  "options": ["They generate income", "They help in producing goods and services", "They provide security", "They build roads"],
+                  "answer": "They help in producing goods and services"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "Which of the following is a key feature of democracy?",
+                  "options": ["Rule by a few", "Rule by the people", "Rule by military", "Rule by king"],
+                  "answer": "Rule by the people"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "What is the main function of the Electoral Commission in Ghana?",
+                  "options": ["Make laws", "Conduct free and fair elections", "Run schools", "Control media"],
+                  "answer": "Conduct free and fair elections"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "Which of these helps in maintaining peace during elections?",
+                  "options": ["Police", "Voters", "Politicians", "Teachers"],
+                  "answer": "Police"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "Which Ghanaian symbol promotes national unity?",
+                  "options": ["National Flag", "Sports team logo", "School emblem", "Company logo"],
+                  "answer": "National Flag"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "What is one effect of a broken marriage on children?",
+                  "options": ["Better education", "Drug abuse", "More money", "Improved health"],
+                  "answer": "Drug abuse"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "Which of these is a social institution in Ghana?",
+                  "options": ["Family", "Car", "Bank", "Market"],
+                  "answer": "Family"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "What is the population structure?",
+                  "options": ["Age and sex composition", "Income distribution", "Land area", "Number of schools"],
+                  "answer": "Age and sex composition"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "Large family size can lead to",
+                  "options": ["Better family upkeep", "High economic burden", "Improved health", "Peace in the community"],
+                  "answer": "High economic burden"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "Which of these is a duty of parents?",
+                  "options": ["Provide love and shelter", "Vote in elections", "Drive cars", "Plant trees"],
+                  "answer": "Provide love and shelter"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "Which of these is an example of responsible parenting?",
+                  "options": ["Providing food", "Ignoring children", "Drunkenness", "Leaving children alone"],
+                  "answer": "Providing food"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "Which political party participated in Ghana's 1992 elections?",
+                  "options": ["NPP", "Labour Party UK", "Democratic Party USA", "None of the above"],
+                  "answer": "NPP"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "The 1992 Constitution guarantees",
+                  "options": ["Citizen rights", "Unlimited power of President", "No laws", "No elections"],
+                  "answer": "Citizen rights"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "Which of these promotes national identity?",
+                  "options": ["National symbols", "Local foods", "Sports cars", "Shopping malls"],
+                  "answer": "National symbols"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "Political stability ensures",
+                  "options": ["National development", "Chaos", "High crime", "No education"],
+                  "answer": "National development"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "objective",
+                  "question": "Which of these is a human right for children?",
+                  "options": ["Education", "Voting", "Driving", "Owning property"],
+                  "answer": "Education"
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain what is meant by the term 'environment'.",
+                  "answer": "The environment refers to the immediate surroundings of a person, including air, water, land, plants, animals, and human-made objects."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Discuss three human activities that lead to air pollution.",
+                  "answer": "Three human activities that lead to air pollution include fumes from vehicles, smoke from fuel wood fires, and industrial emissions."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Describe two effects of air pollution on health.",
+                  "answer": "Air pollution can cause health problems such as asthma, respiratory infections, and other lung-related diseases."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Suggest three ways to prevent air pollution in the community.",
+                  "answer": "Air pollution can be reduced by planting more trees, using public transport, and reducing smoke from fuel wood and industrial emissions."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain the importance of conserving energy.",
+                  "answer": "Conserving energy helps to save money, reduce environmental pollution, and ensures the efficient use of scarce energy resources."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Identify two global sources of energy.",
+                  "answer": "Two global sources of energy are fossil fuels and solar energy."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "What is meant by a human-induced disaster? Give two examples.",
+                  "answer": "A human-induced disaster is one caused by human activities. Examples include bushfires and industrial fires."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain the importance of natural resources to the development of Ghana.",
+                  "answer": "Natural resources are important as they provide raw materials for production, generate revenue, create jobs, and promote national development."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Differentiate between renewable and non-renewable resources.",
+                  "answer": "Renewable resources can be replenished naturally, like timber and water, while non-renewable resources, like gold and oil, cannot be replaced once used."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain why human resources are important to Ghana’s development.",
+                  "answer": "Human resources are important because skilled and educated people produce goods and services, solve problems, and contribute to the nation’s progress."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Discuss the importance of marriage as a social institution in Ghana.",
+                  "answer": "Marriage provides a stable environment for raising children, offers economic support, and strengthens social cohesion within the community."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain three responsibilities of parents in the family.",
+                  "answer": "Parents are responsible for providing food, shelter, education, love, and guidance to ensure children’s well-being and development."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Analyse the effects of rapid population growth on the family and community.",
+                  "answer": "Rapid population growth can strain resources, increase unemployment, reduce access to education and healthcare, and create social problems in families and communities."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain what is meant by national identity.",
+                  "answer": "National identity is the sense of belonging to a nation, shared by citizens through culture, symbols, traditions, and values that unite the country."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Discuss how national symbols promote unity in Ghana.",
+                  "answer": "National symbols, like the flag, coat of arms, and Adinkra symbols, promote unity by reminding citizens of their shared history, culture, and values."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain the significance of political stability to Ghana’s development.",
+                  "answer": "Political stability creates confidence, attracts investments, ensures law and order, and allows consistent development policies to improve the nation’s economy."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Describe the main features of the 1992 Constitution of Ghana.",
+                  "answer": "The 1992 Constitution guarantees fundamental human rights, separation of powers, multi-party democracy, rule of law, and limits on executive power."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain the differences between the third and fourth Republics in Ghana.",
+                  "answer": "The third Republic (1979–1981) had a short-lived democratic government, while the fourth Republic (1992–present) established a stable multi-party system with a strong constitution."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Discuss ways children can contribute to responsible parenting.",
+                  "answer": "Children can contribute by being obedient, performing chores, attending school, communicating effectively with parents, and supporting family harmony."
+                },
+                {
+                  "level": "JHS3",
+                  "subject": "Social Studies",
+                  "type": "subjective",
+                  "question": "Explain the role of peace and security in community development.",
+                  "answer": "Peace and security encourage confidence among individuals, protect investments, reduce conflicts, and promote social and economic development in the community."
+                },
+                
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "What is the main cause of bushfires in Ghana?",
+                    "options": ["Lightning", "Human activities", "Rainfall", "Volcanic eruptions"],
+                    "answer": "Human activities"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Which of the following is a renewable natural resource?",
+                    "options": ["Gold", "Timber", "Oil", "Bauxite"],
+                    "answer": "Timber"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "The main role of the Electoral Commission in Ghana is to",
+                    "options": ["Make laws", "Conduct free and fair elections", "Punish criminals", "Collect taxes"],
+                    "answer": "Conduct free and fair elections"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Which of the following best defines democracy?",
+                    "options": ["Rule by a king", "Rule by the people", "Rule by the army", "Rule by corporations"],
+                    "answer": "Rule by the people"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "One important way to conserve energy is to",
+                    "options": ["Use electricity carelessly", "Switch off unused devices", "Burn more fuel", "Leave taps running"],
+                    "answer": "Switch off unused devices"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Which of the following is an example of a human-induced disaster?",
+                    "options": ["Earthquake", "Flood", "Industrial fire", "Tornado"],
+                    "answer": "Industrial fire"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "The main organ of government responsible for interpreting laws is the",
+                    "options": ["Judiciary", "Legislature", "Executive", "Police"],
+                    "answer": "Judiciary"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Which of the following is NOT a way to prevent air pollution?",
+                    "options": ["Planting trees", "Using public transport", "Burning waste openly", "Promoting renewable energy"],
+                    "answer": "Burning waste openly"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Why is human resource important for Ghana’s development?",
+                    "options": ["They produce goods and services", "They only consume resources", "They have no role", "They are only leaders"],
+                    "answer": "They produce goods and services"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "A large family size may result in",
+                    "options": ["Better education for children", "Increased financial burden", "More space per person", "Less work at home"],
+                    "answer": "Increased financial burden"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "One effect of rapid population growth in a community is",
+                    "options": ["Better healthcare", "Unemployment", "Smaller class sizes", "Higher income per person"],
+                    "answer": "Unemployment"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Which of the following is a way to foster national unity?",
+                    "options": ["Respecting other cultures", "Ignoring diversity", "Promoting tribalism", "Spreading hate speech"],
+                    "answer": "Respecting other cultures"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Which of these is a function of the executive branch?",
+                    "options": ["Enforcing laws", "Making laws", "Interpreting laws", "Judging disputes"],
+                    "answer": "Enforcing laws"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "The national flag, Coat of Arms, and Adinkra symbols promote",
+                    "options": ["National unity", "Foreign policy", "Tourism only", "Local businesses"],
+                    "answer": "National unity"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Responsible parenting includes",
+                    "options": ["Providing food and shelter", "Ignoring children", "Neglecting education", "Being abusive"],
+                    "answer": "Providing food and shelter"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "The first President of Ghana’s Fourth Republic was",
+                    "options": ["Kwame Nkrumah", "Jerry John Rawlings", "John Mahama", "Nana Akufo-Addo"],
+                    "answer": "Jerry John Rawlings"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Which sector benefits directly from the use of science and technology?",
+                    "options": ["Agriculture", "Religion", "Tourism only", "None of the above"],
+                    "answer": "Agriculture"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Which of the following is an effect of air pollution?",
+                    "options": ["Improved health", "Asthma", "Clean environment", "Better crops"],
+                    "answer": "Asthma"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "An example of a non-renewable resource is",
+                    "options": ["Oil", "Timber", "Water", "Solar energy"],
+                    "answer": "Oil"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Education as a human resource helps Ghana by",
+                    "options": ["Training skilled workers", "Destroying jobs", "Reducing innovation", "None of the above"],
+                    "answer": "Training skilled workers"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "A way to prevent soil pollution is to",
+                    "options": ["Dispose of waste properly", "Dump chemicals in rivers", "Burn plastics", "Ignore waste disposal laws"],
+                    "answer": "Dispose of waste properly"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Which of these is a sign of responsible parenting?",
+                    "options": ["Sending children to school", "Leaving children unsupervised", "Being abusive", "Neglecting meals"],
+                    "answer": "Sending children to school"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Which organ of government can veto bills passed by parliament?",
+                    "options": ["President", "Judiciary", "Electoral Commission", "Minister of Education"],
+                    "answer": "President"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "One benefit of using alternative energy sources is",
+                    "options": ["Reducing air pollution", "Increasing oil use", "Promoting deforestation", "Raising temperatures"],
+                    "answer": "Reducing air pollution"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Which of the following is a civic duty?",
+                    "options": ["Voting in elections", "Being rude", "Ignoring laws", "Littering public places"],
+                    "answer": "Voting in elections"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "An example of a cultural activity that promotes national identity is",
+                    "options": ["Traditional festivals", "Cheating", "Stealing", "Bribery"],
+                    "answer": "Traditional festivals"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Which of these can threaten political stability in Ghana?",
+                    "options": ["Vigilantism", "Peaceful protest", "Education", "Community service"],
+                    "answer": "Vigilantism"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "Which of the following is a responsibility of children?",
+                    "options": ["Attending school", "Skipping school", "Destroying property", "Being lazy"],
+                    "answer": "Attending school"
+                  },
+                  {
+                    "level": "JHS3",
+                    "subject": "Social Studies",
+                    "type": "objective",
+                    "question": "What is one role of the Police Service in Ghana?",
+                    "options": ["Maintaining law and order", "Making laws", "Judging cases", "Collecting taxes"],
+                    "answer": "Maintaining law and order"
+                  },
+                  
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following is a major cause of water pollution?",
+                      "options": ["Factory waste", "Tree planting", "Rainfall", "Wind erosion"],
+                      "answer": "Factory waste"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "A community is best defined as",
+                      "options": ["A group of people living together", "A group of animals", "A country", "A school only"],
+                      "answer": "A group of people living together"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "One way to promote sustainable development is to",
+                      "options": ["Use resources wisely", "Exploit resources recklessly", "Pollute the environment", "Cut down all forests"],
+                      "answer": "Use resources wisely"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following is a non-renewable resource?",
+                      "options": ["Coal", "Water", "Trees", "Wind energy"],
+                      "answer": "Coal"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following is a renewable energy source?",
+                      "options": ["Solar energy", "Oil", "Coal", "Natural gas"],
+                      "answer": "Solar energy"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "The main reason for deforestation in Ghana is",
+                      "options": ["Agricultural expansion", "Tourism", "Industrialization only", "Fishing"],
+                      "answer": "Agricultural expansion"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following is a civic right?",
+                      "options": ["Freedom of speech", "Littering", "Stealing", "Cheating"],
+                      "answer": "Freedom of speech"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which organ of government interprets the constitution?",
+                      "options": ["Judiciary", "Legislature", "Executive", "Police"],
+                      "answer": "Judiciary"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "A way to control population growth is to",
+                      "options": ["Practice family planning", "Have many children", "Ignore reproductive health", "Discourage education"],
+                      "answer": "Practice family planning"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following is a benefit of civic education?",
+                      "options": ["Promotes responsible citizenship", "Encourages crime", "Discourages voting", "Promotes corruption"],
+                      "answer": "Promotes responsible citizenship"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of these is a natural disaster?",
+                      "options": ["Flood", "Industrial fire", "Traffic accident", "Oil spillage"],
+                      "answer": "Flood"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following is a primary source of law in Ghana?",
+                      "options": ["Constitution", "Customs only", "News articles", "Advertisements"],
+                      "answer": "Constitution"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following is a civic responsibility?",
+                      "options": ["Obeying laws", "Stealing", "Cheating", "Bribery"],
+                      "answer": "Obeying laws"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of these promotes peace in a community?",
+                      "options": ["Dialogue", "Violence", "Rumors", "Theft"],
+                      "answer": "Dialogue"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which human activity contributes most to climate change?",
+                      "options": ["Burning fossil fuels", "Planting trees", "Using solar panels", "Recycling"],
+                      "answer": "Burning fossil fuels"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "A way to reduce unemployment is to",
+                      "options": ["Provide vocational training", "Discourage work", "Close schools", "Ignore education"],
+                      "answer": "Provide vocational training"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following is a consequence of corruption?",
+                      "options": ["Poor development", "Better infrastructure", "Economic growth", "More jobs"],
+                      "answer": "Poor development"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "A responsible citizen does NOT",
+                      "options": ["Steal", "Pay taxes", "Respect others", "Vote in elections"],
+                      "answer": "Steal"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which sector is directly affected by overfishing?",
+                      "options": ["Fisheries", "Mining", "Education", "Healthcare"],
+                      "answer": "Fisheries"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "One way to improve sanitation in a community is to",
+                      "options": ["Build public toilets", "Dump waste in rivers", "Ignore hygiene", "Burn garbage in streets"],
+                      "answer": "Build public toilets"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of these is a cultural practice in Ghana?",
+                      "options": ["Chieftaincy festivals", "Illegal mining", "Littering", "Cybercrime"],
+                      "answer": "Chieftaincy festivals"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "The main function of the legislature is to",
+                      "options": ["Make laws", "Enforce laws", "Interpret laws", "Collect taxes"],
+                      "answer": "Make laws"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following is a major cause of soil erosion?",
+                      "options": ["Deforestation", "Afforestation", "Tree planting", "Soil conservation"],
+                      "answer": "Deforestation"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of these helps to prevent deforestation?",
+                      "options": ["Tree planting", "Bush burning", "Illegal logging", "Land clearing"],
+                      "answer": "Tree planting"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "A citizen can participate in governance by",
+                      "options": ["Voting", "Ignoring elections", "Breaking laws", "Stealing public funds"],
+                      "answer": "Voting"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following promotes environmental conservation?",
+                      "options": ["Recycling waste", "Dumping waste in rivers", "Burning plastics", "Overfishing"],
+                      "answer": "Recycling waste"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of these is an effect of rapid urbanization?",
+                      "options": ["Traffic congestion", "Better farming", "More forests", "Clean rivers"],
+                      "answer": "Traffic congestion"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following is a consequence of neglecting education?",
+                      "options": ["Unemployment", "Skilled workforce", "National development", "Innovation"],
+                      "answer": "Unemployment"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following is a basic need of humans?",
+                      "options": ["Food", "Mobile phones", "Cars", "Television"],
+                      "answer": "Food"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following helps in promoting tourism?",
+                      "options": ["Cultural festivals", "Pollution", "Vandalism", "Deforestation"],
+                      "answer": "Cultural festivals"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following promotes peace in a country?",
+                      "options": ["Tolerance", "Hate speech", "Discrimination", "Conflict"],
+                      "answer": "Tolerance"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following is a civic responsibility of a Ghanaian?",
+                      "options": ["Paying taxes", "Bribery", "Littering", "Stealing"],
+                      "answer": "Paying taxes"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "A good leader is one who",
+                      "options": ["Listens to people", "Ignores citizens", "Misuses funds", "Disrespects laws"],
+                      "answer": "Listens to people"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of the following is a factor that affects population distribution?",
+                      "options": ["Availability of resources", "Ignoring jobs", "Avoiding schools", "Neglecting healthcare"],
+                      "answer": "Availability of resources"
+                    },
+                    {
+                      "level": "JHS3",
+                      "subject": "Social Studies",
+                      "type": "objective",
+                      "question": "Which of these promotes national development?",
+                      "options": ["Education", "Corruption", "Laziness", "Crime"],
+                      "answer": "Education"
+                    },
+                    
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Explain the causes and effects of deforestation in Ghana."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Describe three ways a citizen can participate in governance in Ghana."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Discuss the importance of education for national development."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Explain the effects of pollution on human health and the environment."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Describe the roles of the three arms of government in Ghana."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Discuss the impact of illegal mining (galamsey) on Ghana’s environment."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Explain the difference between rights and responsibilities of citizens."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Describe the steps that can be taken to promote peace during elections."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Explain how population growth can affect a country’s resources and development."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Discuss the importance of sanitation in a community."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Describe the major causes and effects of climate change in Ghana."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Explain how natural disasters affect communities and ways to reduce their impact."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Discuss the role of culture and tradition in promoting national identity."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Explain how sustainable development can be achieved in Ghana."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Describe the effects of corruption on national development."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Explain the importance of civic education in promoting responsible citizenship."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Discuss the impact of rapid urbanization on communities in Ghana."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Explain how renewable energy can help reduce environmental pollution."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Describe three ways to control population growth in Ghana."
+                      },
+                      {
+                        "level": "JHS3",
+                        "subject": "Social Studies",
+                        "type": "subjective",
+                        "question": "Discuss the role of laws and the judiciary in maintaining order in Ghana."
+                      },
+                      {
+                        "objectives": [
+                          {
+                            "id": 1,
+                            "question": "Which of the following is an example of a formal register in conversation?",
+                            "options": {
+                              "A": "Chatting about a movie with friends",
+                              "B": "Asking a teacher for advice on homework",
+                              "C": "Discussing sports with classmates",
+                              "D": "Talking about hobbies on social media"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 2,
+                            "question": "Identify the main idea in the passage: 'Many students struggle with time management, which affects their academic performance.'",
+                            "options": {
+                              "A": "Students enjoy learning",
+                              "B": "Time management impacts students' academics",
+                              "C": "Teachers are responsible for students' success",
+                              "D": "Academic performance is unrelated to study habits"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 3,
+                            "question": "Which of the following is a vowel sound?",
+                            "options": {
+                              "A": "/b/",
+                              "B": "/t/",
+                              "C": "/i:/",
+                              "D": "/sh/"
+                            },
+                            "answer": "C"
+                          },
+                          {
+                            "id": 4,
+                            "question": "In which sentence is the passive voice correctly used?",
+                            "options": {
+                              "A": "The teacher graded the exams.",
+                              "B": "The exams were graded by the teacher.",
+                              "C": "The teacher will grade the exams.",
+                              "D": "The teacher grading the exams."
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 5,
+                            "question": "Choose the correct adjective phrase: 'She wore a ____ dress to the party.'",
+                            "options": {
+                              "A": "red",
+                              "B": "beautiful red silk",
+                              "C": "dress",
+                              "D": "silk"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 6,
+                            "question": "Which question is open-ended?",
+                            "options": {
+                              "A": "Did you eat breakfast?",
+                              "B": "What do you think about school uniforms?",
+                              "C": "Is it raining outside?",
+                              "D": "Do you like chocolate?"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 7,
+                            "question": "Identify the correct plural form: 'child'",
+                            "options": {
+                              "A": "childs",
+                              "B": "children",
+                              "C": "childes",
+                              "D": "childen"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 8,
+                            "question": "Which sentence uses a conditional type 3 correctly?",
+                            "options": {
+                              "A": "If I had studied, I would have passed the exam.",
+                              "B": "If I study, I will pass the exam.",
+                              "C": "If I study, I pass the exam.",
+                              "D": "If I had studied, I pass the exam."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 9,
+                            "question": "Which of the following is a non-defining relative clause?",
+                            "options": {
+                              "A": "The man who stole the car was arrested.",
+                              "B": "My father, who is a teacher, teaches English.",
+                              "C": "The girl that won the prize is my cousin.",
+                              "D": "The house that Jack built is big."
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 10,
+                            "question": "Identify the main idea: 'Media helps students learn by providing accurate and varied information.'",
+                            "options": {
+                              "A": "Media distracts students",
+                              "B": "Media provides accurate information for learning",
+                              "C": "Students cannot trust media",
+                              "D": "Media is for entertainment only"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 11,
+                            "question": "Which word is a phrasal verb?",
+                            "options": {
+                              "A": "come along",
+                              "B": "teacher",
+                              "C": "beautiful",
+                              "D": "run"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 12,
+                            "question": "In which sentence is a noun phrase used correctly?",
+                            "options": {
+                              "A": "The tall man in a blue suit walked quickly.",
+                              "B": "Quickly walked the man.",
+                              "C": "Man tall blue in walked.",
+                              "D": "Walked the man tall."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 13,
+                            "question": "Identify the reported speech: 'He said, \"I am happy.\"'",
+                            "options": {
+                              "A": "He said that he was happy.",
+                              "B": "He says he is happy.",
+                              "C": "He said I am happy.",
+                              "D": "He said he is happy"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 14,
+                            "question": "Which of the following is an example of a sensory word?",
+                            "options": {
+                              "A": "fragrant",
+                              "B": "run",
+                              "C": "teacher",
+                              "D": "quickly"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 15,
+                            "question": "Which is the correct use of hyphen?",
+                            "options": {
+                              "A": "father-in-law",
+                              "B": "father in law",
+                              "C": "fatherinlaw",
+                              "D": "father,in-law"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 16,
+                            "question": "Which sentence demonstrates effective paragraph unity?",
+                            "options": {
+                              "A": "Dogs are friendly. Cats are lazy. Birds can fly.",
+                              "B": "Dogs are loyal animals. They protect their owners and show affection consistently.",
+                              "C": "I like pizza. I have a cat. I enjoy swimming.",
+                              "D": "She runs fast. He eats slowly. They play outside."
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 17,
+                            "question": "Identify the figurative language in: 'The sun smiled at us.'",
+                            "options": {
+                              "A": "Metaphor",
+                              "B": "Simile",
+                              "C": "Personification",
+                              "D": "Hyperbole"
+                            },
+                            "answer": "C"
+                          },
+                          {
+                            "id": 18,
+                            "question": "Which sentence uses a subordinating conjunction correctly?",
+                            "options": {
+                              "A": "I stayed at home because it rained.",
+                              "B": "I stayed at home and it rained.",
+                              "C": "Because it rained I stayed at home.",
+                              "D": "It rained I stayed home."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 19,
+                            "question": "Choose the correct spelling:",
+                            "options": {
+                              "A": "accomodate",
+                              "B": "accommodate",
+                              "C": "acommodate",
+                              "D": "acomodate"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 20,
+                            "question": "Which sentence contains a defining relative clause?",
+                            "options": {
+                              "A": "The man, who is a doctor, helped the injured child.",
+                              "B": "The car that Jack bought is new.",
+                              "C": "My mother, who cooks well, is busy today.",
+                              "D": "The river, which is wide, flows slowly."
+                            },
+                            "answer": "B"
+                          }
+                        ]
+                      },
+                      {
+                        "objectives": [
+                          {
+                            "id": 21,
+                            "question": "Which of the following sentences is in the future continuous tense?",
+                            "options": {
+                              "A": "She will be studying at 5 PM.",
+                              "B": "She studied at 5 PM.",
+                              "C": "She studies every day.",
+                              "D": "She has studied already."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 22,
+                            "question": "Choose the correct antonym for 'generous':",
+                            "options": {
+                              "A": "kind",
+                              "B": "selfish",
+                              "C": "honest",
+                              "D": "polite"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 23,
+                            "question": "Which word is an example of an abstract noun?",
+                            "options": {
+                              "A": "happiness",
+                              "B": "table",
+                              "C": "dog",
+                              "D": "school"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 24,
+                            "question": "Identify the type of sentence: 'Please close the door.'",
+                            "options": {
+                              "A": "Declarative",
+                              "B": "Imperative",
+                              "C": "Interrogative",
+                              "D": "Exclamatory"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 25,
+                            "question": "Which is the correct comparative form?",
+                            "options": {
+                              "A": "more tall",
+                              "B": "taller",
+                              "C": "tallest",
+                              "D": "tall"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 26,
+                            "question": "Which sentence demonstrates parallel structure?",
+                            "options": {
+                              "A": "I like swimming, running, and to bike.",
+                              "B": "I like swimming, running, and biking.",
+                              "C": "I like swim, run, and biking.",
+                              "D": "I like to swim, running, and biking."
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 27,
+                            "question": "Identify the correct preposition: 'He is interested ____ learning French.'",
+                            "options": {
+                              "A": "on",
+                              "B": "in",
+                              "C": "at",
+                              "D": "for"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 28,
+                            "question": "Which of the following is an interjection?",
+                            "options": {
+                              "A": "Wow!",
+                              "B": "However",
+                              "C": "Although",
+                              "D": "Because"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 29,
+                            "question": "Choose the correct word: 'She ____ a new book yesterday.'",
+                            "options": {
+                              "A": "buy",
+                              "B": "buys",
+                              "C": "bought",
+                              "D": "buying"
+                            },
+                            "answer": "C"
+                          },
+                          {
+                            "id": 30,
+                            "question": "Which of the following sentences contains an idiom?",
+                            "options": {
+                              "A": "He spilled the beans about the surprise party.",
+                              "B": "He ate beans for breakfast.",
+                              "C": "The beans are in the kitchen.",
+                              "D": "She boiled the beans carefully."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 31,
+                            "question": "Select the correct homophone: 'Their / There / They’re going to school.'",
+                            "options": {
+                              "A": "Their",
+                              "B": "There",
+                              "C": "They’re",
+                              "D": "All are correct depending on context"
+                            },
+                            "answer": "D"
+                          },
+                          {
+                            "id": 32,
+                            "question": "Which of the following is an example of onomatopoeia?",
+                            "options": {
+                              "A": "The bees buzzed around the garden.",
+                              "B": "He ran fast.",
+                              "C": "She smiled brightly.",
+                              "D": "The car is red."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 33,
+                            "question": "Choose the correct sentence with subject-verb agreement:",
+                            "options": {
+                              "A": "The group of students are going on a trip.",
+                              "B": "The group of students is going on a trip.",
+                              "C": "The group of students were going on a trip.",
+                              "D": "The group of students be going on a trip."
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 34,
+                            "question": "Which of the following sentences is exclamatory?",
+                            "options": {
+                              "A": "I can’t believe we won the match!",
+                              "B": "We won the match.",
+                              "C": "Did we win the match?",
+                              "D": "We should win the match."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 35,
+                            "question": "Identify the synonym for 'rapid':",
+                            "options": {
+                              "A": "slow",
+                              "B": "quick",
+                              "C": "lazy",
+                              "D": "weak"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 36,
+                            "question": "Choose the correct punctuation: 'Its raining outside, so take an umbrella.'",
+                            "options": {
+                              "A": "It’s raining outside; so take an umbrella.",
+                              "B": "Its raining outside so take an umbrella.",
+                              "C": "It’s raining outside, so take an umbrella.",
+                              "D": "Its raining outside; so take an umbrella."
+                            },
+                            "answer": "C"
+                          },
+                          {
+                            "id": 37,
+                            "question": "Which of the following sentences demonstrates cohesion?",
+                            "options": {
+                              "A": "John went to the store. He bought milk. Then he went home.",
+                              "B": "John went to the store. Milk. Home.",
+                              "C": "Went John store milk home.",
+                              "D": "John store milk home went."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 38,
+                            "question": "Identify the type of literature: 'Romeo and Juliet' by Shakespeare.",
+                            "options": {
+                              "A": "Poetry",
+                              "B": "Drama",
+                              "C": "Prose",
+                              "D": "Essay"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 39,
+                            "question": "Which sentence uses a modal verb correctly?",
+                            "options": {
+                              "A": "She must finish her homework.",
+                              "B": "She finish must her homework.",
+                              "C": "Must she finish her homework?",
+                              "D": "She finish must homework."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 40,
+                            "question": "Choose the correctly punctuated sentence:",
+                            "options": {
+                              "A": "He said 'I am tired'.",
+                              "B": "He said, 'I am tired.'",
+                              "C": "He said I am tired.",
+                              "D": "He said, I am tired."
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 41,
+                            "question": "Which of the following sentences is written in direct speech?",
+                            "options": {
+                              "A": "He said he was hungry.",
+                              "B": "He said, 'I am hungry.'",
+                              "C": "He said that he was hungry.",
+                              "D": "He said he had been hungry."
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 42,
+                            "question": "Choose the correct past perfect sentence:",
+                            "options": {
+                              "A": "She had eaten before he arrived.",
+                              "B": "She eats before he arrived.",
+                              "C": "She ate before he had arrived.",
+                              "D": "She eating before he arrived."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 43,
+                            "question": "Which of the following is a subordinating conjunction?",
+                            "options": {
+                              "A": "because",
+                              "B": "and",
+                              "C": "but",
+                              "D": "or"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 44,
+                            "question": "Identify the correct plural form: 'mouse'",
+                            "options": {
+                              "A": "mouses",
+                              "B": "mice",
+                              "C": "mices",
+                              "D": "mouse"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 45,
+                            "question": "Which of the following is an example of alliteration?",
+                            "options": {
+                              "A": "Peter Piper picked a peck of pickled peppers.",
+                              "B": "He ran very fast.",
+                              "C": "She is reading a book.",
+                              "D": "The sun rises in the east."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 46,
+                            "question": "Which sentence contains a relative clause?",
+                            "options": {
+                              "A": "The book that I read was interesting.",
+                              "B": "I read a book.",
+                              "C": "Books are fun.",
+                              "D": "I like reading."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 47,
+                            "question": "Choose the correctly spelled word:",
+                            "options": {
+                              "A": "definately",
+                              "B": "definitely",
+                              "C": "definitly",
+                              "D": "defenetly"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 48,
+                            "question": "Which of the following is a metaphor?",
+                            "options": {
+                              "A": "Time is a thief.",
+                              "B": "He runs like a cheetah.",
+                              "C": "The sun smiled at us.",
+                              "D": "I am very hungry."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 49,
+                            "question": "Which sentence demonstrates cohesion using pronouns?",
+                            "options": {
+                              "A": "Mary bought a dress. She wore it to the party.",
+                              "B": "Mary bought a dress. Dress was red.",
+                              "C": "Mary bought a dress. Mary wore the dress.",
+                              "D": "Mary bought a dress. Dress to party."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 50,
+                            "question": "Identify the main idea: 'Regular exercise improves physical and mental health.'",
+                            "options": {
+                              "A": "Exercise is difficult",
+                              "B": "Exercise improves health",
+                              "C": "Exercise is boring",
+                              "D": "Mental health is not important"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 51,
+                            "question": "Which is the correct past continuous sentence?",
+                            "options": {
+                              "A": "I was reading when she called.",
+                              "B": "I read when she called.",
+                              "C": "I am reading when she called.",
+                              "D": "I reads when she called."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 52,
+                            "question": "Choose the correct word: 'He is the ____ student in the class.'",
+                            "options": {
+                              "A": "taller",
+                              "B": "tallest",
+                              "C": "tall",
+                              "D": "more tall"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 53,
+                            "question": "Which sentence is correctly punctuated?",
+                            "options": {
+                              "A": "I like apples bananas and oranges.",
+                              "B": "I like apples, bananas, and oranges.",
+                              "C": "I like apples; bananas and oranges.",
+                              "D": "I like apples bananas, and oranges."
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 54,
+                            "question": "Which of the following is a countable noun?",
+                            "options": {
+                              "A": "rice",
+                              "B": "apple",
+                              "C": "milk",
+                              "D": "sugar"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 55,
+                            "question": "Identify the correct use of a semicolon:",
+                            "options": {
+                              "A": "I have a cat; it is very playful.",
+                              "B": "I have a cat, it is very playful.",
+                              "C": "I have a cat: it is very playful.",
+                              "D": "I have a cat it is very playful."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 56,
+                            "question": "Which sentence contains an infinitive?",
+                            "options": {
+                              "A": "I want to read a book.",
+                              "B": "I am reading a book.",
+                              "C": "I read books every day.",
+                              "D": "Reading is fun."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 57,
+                            "question": "Choose the correct indirect speech: 'She said, \"I am tired.\"'",
+                            "options": {
+                              "A": "She said that she was tired.",
+                              "B": "She said she is tired.",
+                              "C": "She says she was tired.",
+                              "D": "She said I am tired."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 58,
+                            "question": "Which of the following is an example of an adverb of frequency?",
+                            "options": {
+                              "A": "always",
+                              "B": "run",
+                              "C": "happy",
+                              "D": "teacher"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 59,
+                            "question": "Identify the correct use of a question tag: 'You are coming, ____?'",
+                            "options": {
+                              "A": "aren’t you",
+                              "B": "isn’t it",
+                              "C": "doesn’t he",
+                              "D": "won’t they"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 60,
+                            "question": "Which sentence shows correct use of comparative degree?",
+                            "options": {
+                              "A": "My house is bigger than yours.",
+                              "B": "My house is biggest than yours.",
+                              "C": "My house is more bigger than yours.",
+                              "D": "My house is big than yours."
+                            },
+                            "answer": "A"
+                          }
+                        ]
+                      },
+                      {
+                        "objectives": [
+                          {
+                            "id": 61,
+                            "question": "Choose the correct past simple form: 'They ____ to the market yesterday.'",
+                            "options": {
+                              "A": "go",
+                              "B": "went",
+                              "C": "going",
+                              "D": "gone"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 62,
+                            "question": "Which of the following sentences is in the passive voice?",
+                            "options": {
+                              "A": "The teacher praised the student.",
+                              "B": "The student was praised by the teacher.",
+                              "C": "The student praised the teacher.",
+                              "D": "The teacher is praising the student."
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 63,
+                            "question": "Identify the conjunction: 'I stayed home because it was raining.'",
+                            "options": {
+                              "A": "I",
+                              "B": "stayed",
+                              "C": "because",
+                              "D": "home"
+                            },
+                            "answer": "C"
+                          },
+                          {
+                            "id": 64,
+                            "question": "Which word is a pronoun?",
+                            "options": {
+                              "A": "he",
+                              "B": "school",
+                              "C": "run",
+                              "D": "beautiful"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 65,
+                            "question": "Select the correct plural form of 'child':",
+                            "options": {
+                              "A": "childs",
+                              "B": "children",
+                              "C": "childes",
+                              "D": "childen"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 66,
+                            "question": "Which of the following sentences contains an adjective?",
+                            "options": {
+                              "A": "The tall boy ran fast.",
+                              "B": "He runs quickly.",
+                              "C": "She sings beautifully.",
+                              "D": "They play football."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 67,
+                            "question": "Identify the main verb: 'She has been reading all morning.'",
+                            "options": {
+                              "A": "has",
+                              "B": "been",
+                              "C": "reading",
+                              "D": "morning"
+                            },
+                            "answer": "C"
+                          },
+                          {
+                            "id": 68,
+                            "question": "Which sentence uses correct subject-verb agreement?",
+                            "options": {
+                              "A": "The dogs runs fast.",
+                              "B": "The dogs run fast.",
+                              "C": "The dog run fast.",
+                              "D": "The dog running fast."
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 69,
+                            "question": "Choose the correct sentence with correct punctuation:",
+                            "options": {
+                              "A": "My father, mother and I went to Accra.",
+                              "B": "My father, mother, and I went to Accra.",
+                              "C": "My father mother, and I went to Accra.",
+                              "D": "My father mother and I went to Accra."
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 70,
+                            "question": "Which of the following is a synonym for 'happy'?",
+                            "options": {
+                              "A": "sad",
+                              "B": "joyful",
+                              "C": "angry",
+                              "D": "tired"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 71,
+                            "question": "Identify the correct homonym: 'I can’t bear the pain.'",
+                            "options": {
+                              "A": "bare",
+                              "B": "bear",
+                              "C": "beer",
+                              "D": "bair"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 72,
+                            "question": "Which sentence is written in future simple tense?",
+                            "options": {
+                              "A": "He will travel tomorrow.",
+                              "B": "He travels every day.",
+                              "C": "He travelled yesterday.",
+                              "D": "He is travelling now."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 73,
+                            "question": "Choose the correct article: 'I saw ____ elephant in the forest.'",
+                            "options": {
+                              "A": "a",
+                              "B": "an",
+                              "C": "the",
+                              "D": "no article needed"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 74,
+                            "question": "Identify the type of sentence: 'What a beautiful view!'",
+                            "options": {
+                              "A": "Declarative",
+                              "B": "Imperative",
+                              "C": "Exclamatory",
+                              "D": "Interrogative"
+                            },
+                            "answer": "C"
+                          },
+                          {
+                            "id": 75,
+                            "question": "Select the correct preposition: 'She is afraid ____ spiders.'",
+                            "options": {
+                              "A": "of",
+                              "B": "for",
+                              "C": "with",
+                              "D": "at"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 76,
+                            "question": "Which of the following is an example of an adverb?",
+                            "options": {
+                              "A": "quickly",
+                              "B": "quick",
+                              "C": "fastness",
+                              "D": "fasted"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 77,
+                            "question": "Identify the object in the sentence: 'She bought a new car.'",
+                            "options": {
+                              "A": "She",
+                              "B": "bought",
+                              "C": "a new car",
+                              "D": "new"
+                            },
+                            "answer": "C"
+                          },
+                          {
+                            "id": 78,
+                            "question": "Which of the following sentences contains an idiom?",
+                            "options": {
+                              "A": "He kicked the bucket last night.",
+                              "B": "He kicked the ball last night.",
+                              "C": "He runs every morning.",
+                              "D": "He reads books daily."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 79,
+                            "question": "Select the correct spelling:",
+                            "options": {
+                              "A": "accomodate",
+                              "B": "accommodate",
+                              "C": "acommodate",
+                              "D": "accomadate"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 80,
+                            "question": "Which of the following sentences shows proper use of a modal verb?",
+                            "options": {
+                              "A": "You should study for the test.",
+                              "B": "You study should for the test.",
+                              "C": "You studying should for the test.",
+                              "D": "You studies should for the test."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 81,
+                            "question": "Identify the correct synonym for 'difficult':",
+                            "options": {
+                              "A": "easy",
+                              "B": "hard",
+                              "C": "soft",
+                              "D": "weak"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 82,
+                            "question": "Choose the correct conditional sentence:",
+                            "options": {
+                              "A": "If it rains, we will stay home.",
+                              "B": "If it rains, we stay home.",
+                              "C": "If it rained, we stay home.",
+                              "D": "If it raining, we stayed home."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 83,
+                            "question": "Which of the following is a countable noun?",
+                            "options": {
+                              "A": "milk",
+                              "B": "apple",
+                              "C": "water",
+                              "D": "rice"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 84,
+                            "question": "Identify the relative pronoun in the sentence: 'The man who called you is my uncle.'",
+                            "options": {
+                              "A": "The",
+                              "B": "who",
+                              "C": "called",
+                              "D": "is"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 85,
+                            "question": "Choose the sentence with correct capitalization:",
+                            "options": {
+                              "A": "i went to Accra last week.",
+                              "B": "I went to Accra last week.",
+                              "C": "I went to accra last week.",
+                              "D": "i Went to Accra last week."
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 86,
+                            "question": "Which of the following is an antonym for 'generous'?",
+                            "options": {
+                              "A": "selfish",
+                              "B": "kind",
+                              "C": "polite",
+                              "D": "honest"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 87,
+                            "question": "Select the correct sentence using a possessive noun:",
+                            "options": {
+                              "A": "That is John book.",
+                              "B": "That is John's book.",
+                              "C": "That is Johns book.",
+                              "D": "That is John’s books"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 88,
+                            "question": "Which of the following is an example of personification?",
+                            "options": {
+                              "A": "The wind whispered through the trees.",
+                              "B": "The wind is strong.",
+                              "C": "The trees are tall.",
+                              "D": "She runs fast."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 89,
+                            "question": "Identify the infinitive in the sentence: 'He wants to play football.'",
+                            "options": {
+                              "A": "He",
+                              "B": "wants",
+                              "C": "to play",
+                              "D": "football"
+                            },
+                            "answer": "C"
+                          },
+                          {
+                            "id": 90,
+                            "question": "Which sentence demonstrates correct use of a phrasal verb?",
+                            "options": {
+                              "A": "She gave up smoking.",
+                              "B": "She gave smoking up.",
+                              "C": "She up gave smoking.",
+                              "D": "She smoking gave up."
+                            },
+                            "answer": "A"
+                          }
+                        ]
+                      },
+                      {
+                        "objectives": 
+                          {
+                            "id": 91,
+                            "question": "Choose the correct comparative form: 'This book is ____ than that one.'",
+                            "options": {
+                              "A": "good",
+                              "B": "better",
+                              "C": "best",
+                              "D": "well"
+                            },
+                            "answer": "B"
+                          },
+                          
+                            "id": 92,
+                            "question": "Identify the correct sentence with reported speech:",
+                            "options": {
+                              "A": "He said, 'I am tired.'",
+                              "B": "He said that he was tired.",
+                              "C": "He says he is tired.",
+                              "D": "He said he tired."
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 93,
+                            "question": "Which of the following sentences contains a metaphor?",
+                            "options": {
+                              "A": "Time is a thief.",
+                              "B": "He runs fast.",
+                              "C": "She is singing loudly.",
+                              "D": "The sun rises in the east."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 94,
+                            "question": "Choose the correct past participle: 'I have ____ my homework.'",
+                            "options": {
+                              "A": "do",
+                              "B": "did",
+                              "C": "done",
+                              "D": "doing"
+                            },
+                            "answer": "C"
+                          },
+                          {
+                            "id": 95,
+                            "question": "Select the sentence with correct word order:",
+                            "options": {
+                              "A": "Quickly he runs to school.",
+                              "B": "He runs quickly to school.",
+                              "C": "He quickly runs to school.",
+                              "D": "Runs he quickly to school."
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 96,
+                            "question": "Identify the correct conjunction: 'I like tea, ____ I don’t like coffee.'",
+                            "options": {
+                              "A": "and",
+                              "B": "but",
+                              "C": "so",
+                              "D": "or"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 97,
+                            "question": "Choose the correct tense: 'By next week, she ____ the project.'",
+                            "options": {
+                              "A": "finishes",
+                              "B": "will finish",
+                              "C": "finished",
+                              "D": "has finished"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 98,
+                            "question": "Which of the following is an abstract noun?",
+                            "options": {
+                              "A": "happiness",
+                              "B": "chair",
+                              "C": "dog",
+                              "D": "book"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 99,
+                            "question": "Identify the adverb in: 'He spoke very softly.'",
+                            "options": {
+                              "A": "He",
+                              "B": "spoke",
+                              "C": "very",
+                              "D": "softly"
+                            },
+                            "answer": "D"
+                          },
+                          {
+                            "id": 100,
+                            "question": "Select the correct homophone: 'I ____ a letter yesterday.'",
+                            "options": {
+                              "A": "read",
+                              "B": "red",
+                              "C": "reed",
+                              "D": "ride"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 101,
+                            "question": "Which of the following sentences is interrogative?",
+                            "options": {
+                              "A": "She likes chocolate.",
+                              "B": "Does she like chocolate?",
+                              "C": "She likes chocolate very much.",
+                              "D": "She likes chocolate, doesn’t she?"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 102,
+                            "question": "Choose the correct reflexive pronoun: 'He made it by ____.'",
+                            "options": {
+                              "A": "him",
+                              "B": "himself",
+                              "C": "he",
+                              "D": "his"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 103,
+                            "question": "Identify the direct object: 'The cat chased the mouse.'",
+                            "options": {
+                              "A": "The cat",
+                              "B": "chased",
+                              "C": "the mouse",
+                              "D": "cat"
+                            },
+                            "answer": "C"
+                          },
+                          {
+                            "id": 104,
+                            "question": "Which sentence uses an interjection?",
+                            "options": {
+                              "A": "Wow! That was amazing.",
+                              "B": "He ran fast.",
+                              "C": "She sings beautifully.",
+                              "D": "They play football."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 105,
+                            "question": "Choose the correct plural noun: 'There are many ____ in the garden.'",
+                            "options": {
+                              "A": "butterflys",
+                              "B": "butterflies",
+                              "C": "butterfli",
+                              "D": "butterflyes"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 106,
+                            "question": "Select the correct sentence using an apostrophe:",
+                            "options": {
+                              "A": "Its raining outside.",
+                              "B": "It's raining outside.",
+                              "C": "It raining's outside.",
+                              "D": "It rain's outside."
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 107,
+                            "question": "Identify the synonym for 'brave':",
+                            "options": {
+                              "A": "cowardly",
+                              "B": "fearless",
+                              "C": "weak",
+                              "D": "timid"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 108,
+                            "question": "Choose the correct tense: 'She ____ here since Monday.'",
+                            "options": {
+                              "A": "is",
+                              "B": "was",
+                              "C": "has been",
+                              "D": "will be"
+                            },
+                            "answer": "C"
+                          },
+                          {
+                            "id": 109,
+                            "question": "Which of the following is an example of alliteration?",
+                            "options": {
+                              "A": "Peter Piper picked a peck of pickled peppers.",
+                              "B": "The sky is blue.",
+                              "C": "He ran fast.",
+                              "D": "Time flies."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 110,
+                            "question": "Identify the correct use of 'there', 'their', or 'they’re':",
+                            "options": {
+                              "A": "Their going to the market.",
+                              "B": "There going to the market.",
+                              "C": "They’re going to the market.",
+                              "D": "Theyre going to the market."
+                            },
+                            "answer": "C"
+                          },
+                          {
+                            "id": 111,
+                            "question": "Choose the correct phrasal verb: 'She ____ smoking last year.'",
+                            "options": {
+                              "A": "gave up",
+                              "B": "gave in",
+                              "C": "gave on",
+                              "D": "gave out"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 112,
+                            "question": "Which sentence demonstrates correct use of a relative clause?",
+                            "options": {
+                              "A": "The man who is wearing a hat is my uncle.",
+                              "B": "The man who wearing a hat is my uncle.",
+                              "C": "The man which is wearing a hat is my uncle.",
+                              "D": "The man, he is wearing a hat is my uncle."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 113,
+                            "question": "Identify the conjunction in: 'Neither the boys nor the girls were late.'",
+                            "options": {
+                              "A": "Neither",
+                              "B": "nor",
+                              "C": "the",
+                              "D": "were"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 114,
+                            "question": "Select the correct superlative: 'She is the ____ student in the class.'",
+                            "options": {
+                              "A": "smart",
+                              "B": "smarter",
+                              "C": "smartest",
+                              "D": "most smart"
+                            },
+                            "answer": "C"
+                          },
+                          {
+                            "id": 115,
+                            "question": "Which sentence contains an adjective clause?",
+                            "options": {
+                              "A": "The book that I borrowed was interesting.",
+                              "B": "I read a book.",
+                              "C": "She is reading.",
+                              "D": "Books are useful."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 116,
+                            "question": "Choose the correct word: 'He has been ill ____ last week.'",
+                            "options": {
+                              "A": "since",
+                              "B": "for",
+                              "C": "from",
+                              "D": "during"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 117,
+                            "question": "Identify the type of sentence: 'Close the door, please.'",
+                            "options": {
+                              "A": "Declarative",
+                              "B": "Imperative",
+                              "C": "Interrogative",
+                              "D": "Exclamatory"
+                            },
+                            "answer": "B"
+                          },
+                          {
+                            "id": 118,
+                            "question": "Which of the following is an example of a compound sentence?",
+                            "options": {
+                              "A": "I went to the market, and I bought some fruits.",
+                              "B": "I went to the market.",
+                              "C": "I bought fruits.",
+                              "D": "I like apples."
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 119,
+                            "question": "Select the correct synonym for 'angry':",
+                            "options": {
+                              "A": "mad",
+                              "B": "happy",
+                              "C": "sad",
+                              "D": "joyful"
+                            },
+                            "answer": "A"
+                          },
+                          {
+                            "id": 120,
+                            "question": "Choose the correct past continuous form: 'They ____ football when it started to rain.'",
+                            "options": {
+                              "A": "played",
+                              "B": "are playing",
+                              "C": "were playing",
+                              "D": "play"
+                            },
+                            "answer": "C"
+                          },
+                        
+                      
+                      
+                        {
+                          "subject": "English",
+                          "topic": "Reading Comprehension",
+                          "subtopic": "Passage Understanding",
+                          "question_type": "MCQ",
+                          "question": "Kwame woke up early to help his mother sell fruits at the market. He carried baskets of oranges and mangoes. Though tired, he felt proud because he was supporting his family. What is the main idea of the passage?",
+                          "options": ["Kwame is tired from work", "Kwame helps his family at the market", "Kwame sells mangoes only", "Kwame prefers to sleep"],
+                          "answer": "Kwame helps his family at the market"
+                        },
+                        {
+                          "subject": "English",
+                          "topic": "Reading Comprehension",
+                          "subtopic": "Vocabulary in Context",
+                          "question_type": "MCQ",
+                          "question": "From the passage above, the word 'proud' most nearly means:",
+                          "options": ["Happy", "Lonely", "Strong", "Smart"],
+                          "answer": "Happy"
+                        },
+                        {
+                          "subject": "English",
+                          "topic": "Reading Comprehension",
+                          "subtopic": "Inference",
+                          "question_type": "MCQ",
+                          "question": "The passage suggests that Kwame:",
+                          "options": ["Works reluctantly", "Ignores his family", "Feels responsible", "Likes sleeping"],
+                          "answer": "Feels responsible"
+                        },
+                        {
+                          "subject": "English",
+                          "topic": "Reading Comprehension",
+                          "subtopic": "Detail Recognition",
+                          "question_type": "MCQ",
+                          "question": "Which question can be answered from the passage?",
+                          "options": ["How many oranges were in the basket?", "Who helped Kwame at the market?", "What did Kwame do in the morning?", "Where is the market located?"],
+                          "answer": "What did Kwame do in the morning?"
+                        },
+                        {
+                          "subject": "English",
+                          "topic": "Reading Comprehension",
+                          "subtopic": "Inference",
+                          "question_type": "MCQ",
+                          "question": "Choose the inference from the passage:",
+                          "options": ["Kwame is lazy", "Kwame is caring", "Kwame is angry", "Kwame is rich"],
+                          "answer": "Kwame is caring"
+                        },
+                        {
+                          "subject": "English",
+                          "topic": "Reading Comprehension",
+                          "subtopic": "Detail Recognition",
+                          "question_type": "MCQ",
+                          "question": "Which of the following is NOT a supporting detail in the passage?",
+                          "options": ["Kwame carries baskets", "Kwame feels proud", "Kwame wakes up early", "Kwame has a new bicycle"],
+                          "answer": "Kwame has a new bicycle"
+                        },
+                        {
+                          "subject": "English",
+                          "topic": "Reading Comprehension",
+                          "subtopic": "Author's Purpose",
+                          "question_type": "MCQ",
+                          "question": "The author’s purpose in the passage is to:",
+                          "options": ["Entertain", "Persuade", "Inform", "Argue"],
+                          "answer": "Inform"
+                        },
+                        {
+                          "subject": "English",
+                          "topic": "Reading Comprehension",
+                          "subtopic": "Character Analysis",
+                          "question_type": "MCQ",
+                          "question": "What can we learn about Kwame’s character?",
+                          "options": ["He is selfish", "He is hardworking", "He is careless", "He is forgetful"],
+                          "answer": "He is hardworking"
+                        },
+                        {
+                          "subject": "English",
+                          "topic": "Reading Comprehension",
+                          "subtopic": "Tone",
+                          "question_type": "MCQ",
+                          "question": "The tone of the passage is:",
+                          "options": ["Sad", "Proud", "Angry", "Humorous"],
+                          "answer": "Proud"
+                        },
+                        {
+                          "subject": "English",
+                          "topic": "Reading Comprehension",
+                          "subtopic": "Open-ended Question Recognition",
+                          "question_type": "MCQ",
+                          "question": "Which question is an open-ended question that could be asked about the passage?",
+                          "options": ["What color are the oranges?", "How many mangoes did he carry?", "Why do you think Kwame helps his mother?", "What day of the week is it?"],
+                          "answer": "Why do you think Kwame helps his mother?"
+                        },
+                        
+                          {
+                            "subject": "English",
+                            "topic": "Reading Comprehension",
+                            "subtopic": "Passage Understanding",
+                            "question_type": "MCQ",
+                            "question": "Passage: \n\n\"The small village of Aburi was known for its lush gardens and friendly people. Every morning, the children would run to the river to fetch water for their families, singing songs as they went. Life was simple, yet fulfilling. One day, a stranger came to the village and offered to build a school, promising that the children could learn about the world beyond Aburi. Some villagers were excited, others cautious, but the children eagerly waited for the first day of school.\" \n\nQuestion: What is the main idea of the passage?",
+                            "options": ["The village children enjoy playing by the river", "The village is preparing to welcome a new school", "The villagers dislike strangers", "The village is isolated and poor"],
+                            "answer": "The village is preparing to welcome a new school"
+                          },
+                          {
+                            "subject": "English",
+                            "topic": "Reading Comprehension",
+                            "subtopic": "Inference",
+                            "question_type": "MCQ",
+                            "question": "What can be inferred about the villagers’ attitude toward education?",
+                            "options": ["They are uninterested", "They are divided in opinion", "They refuse any change", "They know everything already"],
+                            "answer": "They are divided in opinion"
+                          },
+                          {
+                            "subject": "English",
+                            "topic": "Reading Comprehension",
+                            "subtopic": "Detail Recognition",
+                            "question_type": "MCQ",
+                            "question": "Which of the following details is stated in the passage?",
+                            "options": ["The stranger built a hospital", "The children fetched water in the morning", "The villagers built the school themselves", "The river dried up"],
+                            "answer": "The children fetched water in the morning"
+                          },
+                          {
+                            "subject": "English",
+                            "topic": "Reading Comprehension",
+                            "subtopic": "Vocabulary in Context",
+                            "question_type": "MCQ",
+                            "question": "In the passage, the word 'cautious' most nearly means:",
+                            "options": ["Excited", "Careful", "Brave", "Angry"],
+                            "answer": "Careful"
+                          },
+                          {
+                            "subject": "English",
+                            "topic": "Reading Comprehension",
+                            "subtopic": "Author's Purpose",
+                            "question_type": "MCQ",
+                            "question": "The author’s purpose in the passage is to:",
+                            "options": ["Inform about a village", "Persuade the reader to build schools", "Entertain with a funny story", "Describe a historical event"],
+                            "answer": "Inform about a village"
+                          },
+                          {
+                            "subject": "English",
+                            "topic": "Reading Comprehension",
+                            "subtopic": "Character Analysis",
+                            "question_type": "MCQ",
+                            "question": "Which trait best describes the children in the passage?",
+                            "options": ["Eager", "Lazy", "Angry", "Afraid"],
+                            "answer": "Eager"
+                          },
+                          {
+                            "subject": "English",
+                            "topic": "Reading Comprehension",
+                            "subtopic": "Tone",
+                            "question_type": "MCQ",
+                            "question": "The tone of the passage can best be described as:",
+                            "options": ["Joyful and hopeful", "Sad and gloomy", "Angry and harsh", "Suspenseful"],
+                            "answer": "Joyful and hopeful"
+                          },
+                          {
+                            "subject": "English",
+                            "topic": "Reading Comprehension",
+                            "subtopic": "Cloze Understanding",
+                            "question_type": "MCQ",
+                            "question": "Complete the sentence: The stranger came to the village to _____ a school.",
+                            "options": ["sell", "build", "destroy", "visit"],
+                            "answer": "build"
+                          },
+                          {
+                            "subject": "English",
+                            "topic": "Reading Comprehension",
+                            "subtopic": "Inference",
+                            "question_type": "MCQ",
+                            "question": "Why were some villagers cautious about the stranger's offer?",
+                            "options": ["They disliked education", "They had never met him before", "They wanted to build the school themselves", "They preferred the river"],
+                            "answer": "They had never met him before"
+                          },
+                          {
+                            "subject": "English",
+                            "topic": "Reading Comprehension",
+                            "subtopic": "Open-ended Question Recognition",
+                            "question_type": "MCQ",
+                            "question": "Which question is open-ended and can be asked about the passage?",
+                            "options": ["What is the name of the river?", "How many children fetched water?", "Why do you think the stranger offered to build a school?", "What song did the children sing?"],
+                            "answer": "Why do you think the stranger offered to build a school?"
+                          },
+                          
+                            {
+                              "subject": "English",
+                              "topic": "Reading Comprehension",
+                              "subtopic": "Passage Understanding",
+                              "question_type": "MCQ",
+                              "question": "Passage: ...[Longer passage continued from previous]... \n\nQuestion: What is the main idea of the passage?",
+                              "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+                              "answer": "Option 2"
+                            },
+                            {
+                              "subject": "English",
+                              "topic": "Reading Comprehension",
+                              "subtopic": "Inference",
+                              "question_type": "MCQ",
+                              "question": "What can be inferred about the main character's attitude?",
+                              "options": ["Option A", "Option B", "Option C", "Option D"],
+                              "answer": "Option B"
+                            },
+                            {
+                              "subject": "English",
+                              "topic": "Summary Writing",
+                              "subtopic": "Information Condensation",
+                              "question_type": "MCQ",
+                              "question": "Which sentence best summarizes the passage above?",
+                              "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+                              "answer": "Option 3"
+                            },
+                            {
+                              "subject": "English",
+                              "topic": "Grammar",
+                              "subtopic": "Tenses",
+                              "question_type": "MCQ",
+                              "question": "Choose the correct form: 'By next week, she ____ her exams.'",
+                              "options": ["will complete", "will have completed", "completed", "completes"],
+                              "answer": "will have completed"
+                            },
+                            {
+                              "subject": "English",
+                              "topic": "Grammar",
+                              "subtopic": "Prepositions",
+                              "question_type": "MCQ",
+                              "question": "Fill in the blank: 'He is interested ____ music.'",
+                              "options": ["in", "on", "at", "with"],
+                              "answer": "in"
+                            },
+                            {
+                              "subject": "English",
+                              "topic": "Vocabulary",
+                              "subtopic": "Idioms",
+                              "question_type": "MCQ",
+                              "question": "The idiom 'to break the ice' means:",
+                              "options": ["To start a conversation", "To destroy something", "To be cold", "To travel"],
+                              "answer": "To start a conversation"
+                            },
+                            {
+                              "subject": "English",
+                              "topic": "Letter Writing",
+                              "subtopic": "Formal Letter",
+                              "question_type": "MCQ",
+                              "question": "Which is the correct opening for a formal letter?",
+                              "options": ["Dear Sir/Madam,", "Hi there,", "Hey!", "Yo,"],
+                              "answer": "Dear Sir/Madam,"
+                            },
+                            {
+                              "subject": "English",
+                              "topic": "Essay Writing",
+                              "subtopic": "Argumentative Essay",
+                              "question_type": "MCQ",
+                              "question": "Which of the following is most appropriate as a thesis statement?",
+                              "options": ["I like chocolate.", "Education is essential for national development.", "It was a rainy day.", "My favorite color is blue."],
+                              "answer": "Education is essential for national development."
+                            },
+                            {
+                              "subject": "English",
+                              "topic": "Literature",
+                              "subtopic": "Poetry Comprehension",
+                              "question_type": "MCQ",
+                              "question": "In the poem, the metaphor 'time is a thief' suggests:",
+                              "options": ["Time is fast", "Time takes away opportunities", "Time is a person", "Time is valuable"],
+                              "answer": "Time takes away opportunities"
+                            },
+                            {
+                              "subject": "English",
+                              "topic": "Literature",
+                              "subtopic": "Character Analysis",
+                              "question_type": "MCQ",
+                              "question": "What best describes the main character in the extract?",
+                              "options": ["Brave and selfless", "Lazy and careless", "Mean and rude", "Shy and nervous"],
+                              "answer": "Brave and selfless"
+                            },
+                            {
+                              "subject": "English",
+                              "topic": "Functional English",
+                              "subtopic": "Dialogue Writing",
+                              "question_type": "MCQ",
+                              "question": "Which of the following is correct dialogue punctuation?",
+                              "options": ["She said, 'I am coming.'", "She said 'I am coming.'", "'She said, I am coming.'", "She said: I am coming"],
+                              "answer": "She said, 'I am coming.'"
+                            }
+                          ]
+                          
+                        
+                      
+                    
+                  
+                   
+              
+            
           
         
       
